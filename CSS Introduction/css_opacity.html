@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                opacity: 0.5;
+            }
+        img:hover {
+            opacity: 1.0;
+        }
+        div {
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+div.one {
+  opacity: 0.1;
+}
+
+div.two {
+  opacity: 0.3;
+}
+
+div.threen {
+  opacity: 0.6;
+}
+div.four {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.five {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.six {
+  background: rgba(76, 175, 80, 0.6);
+}
+
+div.background {
+    background: url(img/indir.jpg)  repeat;
+    border: 2px solid black;
+}
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+        </style>
+    </head>
+    <body>
+         <h1>Görüntü Şeffaflığı(Transparency)</h1>
+         <p>opacity özelliği, bir elemanın şeffaflığını belirtir. Değer ne kadar düşükse, o kadar şeffaftır:</p>
+         <p>%50 opaklığa sahip resim:</p>
+         <img src="img/img_tree.png" alt="Tree" width="170" height="100">
+ 
+          <hr>
+           <img src="img/pineapple.jpg" alt="Pineapple" width="170" height="100">
+           <img src="img/img_girl.jpg" alt="Girl" width="170" height="100">
+           <img src="img/indir.jpg" alt="İmage" width="170" height="100">
+    
+           <hr>
+           <h1>Transparent Box</h1>
+            <p>With opacity:</p>
+            <div class="one"><p>10% opacity</p></div>
+            <div class="two"><p>30% opacity</p></div>
+            <div class="threen"><p>60% opacity</p></div>
+            <div><p>opacity 1</p></div>
+     
+            <p>With RGBA color values:</p>
+            <div class="four"><p>10% opacity</p></div>
+            <div class="five"><p>30% opacity</p></div>
+            <div class="six"><p>60% opacity</p></div>
+            <div><p>default</p></div>
+
+            <p>Opaklık özelliğini kullanırken metnin nasıl saydamlaştığına ve arka plan rengine dikkat edin.</p>
+            <hr>
+
+            <div class="background">
+                <div class="transbox">
+                    <p>Bu, şeffaf kutuya yerleştirilmiş bazı metinlerdir.</p>
+                </div>
+            </div>
+        
+        
+        </body>
+</html>

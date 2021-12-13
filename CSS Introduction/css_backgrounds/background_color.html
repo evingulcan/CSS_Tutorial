@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                background-color: palevioletred;
+            }
+            div {
+                background-color: green;
+            }
+            p {
+                background-color: yellow;
+            }
+            div.first {
+                opacity: 0.1;
+            }
+            div.second {
+                opacity: 0.3;
+            }
+            div.third {
+                opacity: 0.6;
+            }
+
+        </style>
+    </head>
+    <body>
+    <h1>CSS arka plan rengi örneği!</h1>
+    <div>
+        Bu, bir div öğesinin içindeki bir metindir.
+        <p>Bu paragrafın kendi arka plan rengi vardır.</p>
+        Bu paragrafın kendi arka plan rengi vardır.
+    </div>
+    <hr>
+    <h2>Şeffaf Kutular</h2>
+    <p>Bir öğenin arka planına saydamlık eklemek için opacity özelliğini kullanırken, tüm alt öğeleri de saydam hale gelir. Bu, tamamen saydam bir öğenin içindeki metnin okunmasını zorlaştırabilir:</p>
+     
+     <div class="first">
+         <h1>opacity 0.1</h1>
+     </div>
+
+     <div class="second">
+         <h1>opacity 0.3</h1>
+     </div>
+
+     <div class="third">
+         <h1>opacity 0.6</h1>
+     </div>
+
+     <div>
+         <h1>opacity 1 (default)</h1>
+     </div>
+</body>
+</html>
+<!--
+    background-color = Nitelik bir elemanın arka plan rengini belirler.
+-->

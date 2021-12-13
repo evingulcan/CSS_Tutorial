@@ -1,0 +1,19 @@
+
+
+attr() = Seçili öğenin bir özniteliğinin değerini döndürür
+calc() = CSS özellik değerlerini belirlemek için hesaplamalar yapmanızı sağlar
+conic-gradient() = Konik bir gradyan oluşturur
+counter() = Adlandırılmış sayacın geçerli değerini döndürür
+cubic-bezier()= Bir Kübik Bezier eğrisi tanımlar
+hsl() = Ton-Doygunluk-Açıklık modelini (HSL) kullanarak renkleri tanımlar
+hsla() = Ton-Doygunluk-Açıklık-Alfa modelini (HSLA) kullanarak renkleri tanımlar
+linear-gradient() = Doğrusal bir gradyan oluşturur
+max() = Özellik değeri olarak virgülle ayrılmış bir değerler listesinden en büyük değeri kullanır
+min() = Özellik değeri olarak virgülle ayrılmış bir değerler listesinden en küçük değeri kullanır
+radial-gradient() = Radyal bir gradyan oluşturur
+repeating-conic-gradient() = Bir konik gradyanı yineler
+repeating-linear-gradient() = Doğrusal bir gradyanı tekrarlar
+repeating-radial-gradient() = Radyal bir gradyanı tekrarlar
+rgb() = Kırmızı-Yeşil-Mavi modelini (RGB) kullanarak renkleri tanımlar
+rgba() = Kırmızı-Yeşil-Mavi-Alfa modelini (RGBA) kullanarak renkleri tanımlar
+var() = Özel bir özelliğin değerini ekler

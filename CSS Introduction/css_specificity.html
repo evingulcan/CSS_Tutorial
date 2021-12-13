@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         div#a {
+             background-color: green;
+         }
+         #a {
+             background-color: yellow;
+         }
+         div[id=a] {
+             background-color: blue;
+         }
+         .intro {
+             background-color: blueviolet;
+         }
+         h1 {
+             background-color: red;
+         }
+        </style>
+    </head>
+    <body> 
+        <div id="a">Bu bir div</div>
+
+        <hr>
+          
+        <h1 class="intro">Bu bir başlık</h1>
+
+    </body>
+</html>
+<!--
+    Bir sınıf seçici, herhangi bir sayıda öğe seçiciyi yener - .intro gibi bir sınıf seçici, h1, p, div vb.'yi yener.
+    Satır içi stiller(Inline styles) = Bir satır içi stil, doğrudan stillendirilecek öğeye eklenir. Örnek: <h1 style="color: #ffffff;">.
+    Kimlikler(IDs) = Kimlik, #navbar gibi sayfa öğeleri için benzersiz bir tanımlayıcıdır.
+    Sınıflar, nitelikler ve sözde sınıflar(Classes, attributes and pseudo-classes) = Bu kategori .classes, [öznitelikler] ve :hover, :focus vb. gibi sözde sınıfları içerir.
+    Öğeler ve sözde öğeler(Elements and pseudo-elements) = Bu kategori, öğe adlarını ve h1, div, :before ve :after gibi sözde öğeleri içerir.
+
+
+-->

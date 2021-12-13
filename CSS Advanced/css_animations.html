@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/* Animasyonun uygulanacağı öğe */
+div.ex1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+div.ex2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 5s;
+}
+div.ex3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 5s;
+}
+div.ex4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example4;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+div.ex5 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example5;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
+div.ex6 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example6;
+  animation-duration: 5s;
+  animation-direction: reverse;
+}
+div.ex7 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example7;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+div.ex8 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example8;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+div.ex9 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example9;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+div.ex10 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example10;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+div.ex11 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example11;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+div.ex12 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example12;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* Animasyon kodu */
+@keyframes example1 {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+@keyframes example2 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+@keyframes example3 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+@keyframes example4 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+@keyframes example5 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+@keyframes example6 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+@keyframes example7 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+@keyframes example8 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+@keyframes example9 {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+@keyframes example10 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px;}
+}
+@keyframes example11 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+}
+
+@keyframes example12 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div class="ex1"></div>
+<br>
+<div class="ex2"></div>
+<br>
+<div class="ex3"></div>
+<br>
+<p>animasyon gecikmesi özelliği, bir animasyonun başlaması için bir gecikme belirtir. Aşağıdaki örnek, animasyonu başlatmadan önce 2 saniyelik bir gecikmeye sahiptir:</p>
+<div class="ex4"></div>
+<br>
+<p>animasyon-yineleme-sayısı özelliği, bir animasyonun kaç kez çalıştırılacağını belirtir. Aşağıdaki örnek, animasyonu durmadan önce 3 kez çalıştıracaktır:</p>
+ <p>Animasyon-yineleme-sayısı özelliği, animasyonun sonsuza kadar çalışmasına izin vermek için sonsuz olarak ayarlanabilir:</p>
+<p> animation-iteration-count: infinite; yaparak sonsuz çalıştırabilirsiniz.</p>
+ <div class="ex5"></div>
+<br>
+<p>animasyon-yön özelliği, bir animasyonun ileri mi, geri mi yoksa alternatif döngülerde mi oynatılacağını belirtir. Aşağıdaki örnek, animasyonu ters yönde (geriye doğru) çalıştıracaktır:</p>
+<div class="ex6"></div>
+<br>
+<p>animasyon-yön özelliği, bir animasyonun ileri mi, geri mi yoksa alternatif döngülerde mi oynatılacağını belirtir. Aşağıdaki örnek, animasyonun önce ileri, sonra geriye doğru çalışmasını sağlamak için "alternate" değerini kullanır:</p>
+<div class="ex7"></div>
+<br>
+<p>animasyon-yön özelliği, bir animasyonun ileri mi, geri mi yoksa alternatif döngülerde mi oynatılacağını belirtir. Aşağıdaki örnek, animasyonun önce geriye, sonra ileriye doğru çalışmasını sağlamak için "alternatif-ters" değerini kullanır:</p>
+<div class="ex8"></div>
+<br>
+<p>Animasyon sona erdiğinde div öğesinin son ana kare tarafından ayarlanan stil değerlerini korumasına izin verin:</p>
+<div class="ex9"></div>
+<br>
+<p>Animasyon başlamadan önce (animasyon gecikme süresi boyunca) div öğesinin ilk ana kare tarafından ayarlanan stil değerlerini almasına izin verin:</p>
+<div class="ex10"></div>
+<br>
+<p>div öğesinin, animasyon başlamadan önce ilk ana kare tarafından ayarlanan stil değerlerini almasına ve animasyon sona erdiğinde son ana karenin stil değerlerini korumasına izin verin:</p>
+<div class="ex11"></div>
+<br>
+<p>Bu örnek, animasyon özelliklerinden altı tanesini kullanır:</p>
+<div class="ex12"></div>
+<br>
+<hr>
+<p>animasyon-zamanlama-fonksiyonu özelliği, animasyonun hız eğrisini belirtir. Aşağıdaki örnek, kullanılabilecek farklı hız eğrilerinden bazılarını göstermektedir:</p>
+
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+
+<p><b>Not:</b>Bir animasyon bittiğinde orijinal stiline geri döner.</p>
+
+</body>
+</html>
+
+<!--
+@keyframes = Animasyon kodunu belirtir
+animation = Tüm animasyon özelliklerini ayarlamak için bir stenografi özelliği
+animation-delay = Bir animasyonun başlaması için bir gecikme belirtir
+animation-direction = Bir animasyonun ileri mi, geri mi yoksa alternatif döngülerde mi oynatılacağını belirtir
+animation-duration = Bir animasyonun bir döngüyü tamamlamasının ne kadar süreceğini belirtir
+animation-fill-mode = Animasyon oynatılmadığında (başlamadan önce, sona erdikten sonra veya her ikisi) öğe için bir stil belirtir.
+animation-iteration-count = Bir animasyonun kaç kez oynatılması gerektiğini belirtir
+animation-name = @keyframes animasyonunun adını belirtir
+animation-play-state = Animasyonun çalıştığını veya duraklatıldığını belirtir
+animation-timing-function = Animasyonun hız eğrisini belirtir
+-->

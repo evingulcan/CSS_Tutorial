@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv1 {
+  transform: rotateX(150deg);
+}
+#myDiv2 {
+    transform: rotateY(150deg);
+}
+#myDiv3 {
+    transform: rotateZ(90deg);
+}
+</style>
+</head>
+<body>
+
+<h1>rotateX()(döndürmeX()) Yöntemi</h1>
+<p>rotasyonX() yöntemi, bir öğeyi belirli bir derecede X ekseni etrafında döndürür.</p>
+<div>
+    Bu normal bir div öğesi.
+</div>
+<div id="myDiv1">
+    Bu div öğesi 150 derece döndürülür.
+</div>
+
+<hr>
+
+<h1>rotateY() Yöntemi</h1>
+<p>döndürmeY() yöntemi, bir öğeyi belirli bir derecede Y ekseni etrafında döndürür.</p>
+<div>
+    Bu normal bir div öğesi.
+</div>
+<div id="myDiv2">
+    Bu div öğesi 150 derece döndürülür.
+</div>
+
+<hr>
+
+<h1>rotateZ() Yöntemi</h1>
+<p>rotasyonZ() yöntemi, bir öğeyi belirli bir derecede Z ekseni etrafında döndürür.</p>
+<div>
+    Bu normal bir div öğesi.
+</div>
+<div id="myDiv3">
+    Bu div öğesi 90 derece döndürülür.
+</div>
+
+</body>
+</html>
+<!-- 
+transform = Bir öğeye 2D veya 3D dönüştürme uygular
+transform-origin = Dönüştürülen öğelerdeki konumu değiştirmenizi sağlar
+transform-style = 3D alanda iç içe öğelerin nasıl oluşturulacağını belirtir
+perspective = 3D öğelerin nasıl görüntülendiğine ilişkin perspektifi belirtir
+perspective-origin = 3D öğelerin alt konumunu belirtir
+backface-visibility = Bir öğenin ekrana bakmadığında görünür olup olmayacağını tanımlar
+
+
+matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) = 16 değerlik bir 4x4 matrisi kullanarak bir 3D dönüşümü tanımlar
+translate3d(x,y,z) = 3D çeviri tanımlar
+translateX(x) = Yalnızca X ekseni için değeri kullanarak bir 3D çeviri tanımlar
+translateY(y) = Yalnızca Y ekseni için değeri kullanarak bir 3D çeviri tanımlar
+translateZ(z) = Yalnızca Z ekseni için değeri kullanarak bir 3D çeviri tanımlar
+scale3d(x,y,z) = 3D ölçek dönüşümünü tanımlar
+scaleX(x) =  X ekseni için bir değer vererek bir 3D ölçek dönüşümü tanımlar
+scaleY(y) = Y ekseni için bir değer vererek bir 3D ölçek dönüşümü tanımlar
+scaleZ(z) = Z ekseni için bir değer vererek bir 3D ölçek dönüşümü tanımlar
+rotate3d(x,y,z,angle) = 3D döndürme tanımlar
+rotateX(angle) = X ekseni boyunca bir 3D döndürme tanımlar
+rotateY(angle) = Y ekseni boyunca bir 3D döndürme tanımlar
+rotateZ(angle) = Z ekseni boyunca bir 3D döndürme tanımlar
+perspective(n) = 3D dönüştürülmüş bir öğe için perspektif bir görünüm tanımlar
+-->

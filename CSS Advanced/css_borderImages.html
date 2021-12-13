@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #borderimg1 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 30 round;
+            }
+            #borderimg2 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 30 stretch;
+            }
+            #borderimg3 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 50 round;
+            }
+            #borderimg4 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 20% round;
+            }
+            #borderimg5 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 30% round;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>border-image Özellik</h1>
+
+      <p>Burada, kenarlığı oluşturmak için görüntünün orta bölümleri tekrarlanır:</p>
+      <p id="borderimg1">border-image: url(border.png) 30 round;</p>
+      <p>İşte orijinal görüntü:<br><img src="images/border.png"></p>
+      <p><b>Not:</b>Internet Explorer 10 ve önceki sürümleri border-image özelliğini desteklemez.</p>
+
+      <hr>
+
+       <p>Burada, kenarlığı oluşturmak için görüntünün orta bölümleri gerilir:</p>
+       <p id="borderimg2">border-image: url(border.png) 30 stretch;</p>
+       <p>İşte orijinal görüntü:<br><img src="images/border.png"></p>
+   
+       <hr>
+
+       <p id="borderimg3">border-image: url(border.png) 50 round;</p>
+       <p id="borderimg4">border-image: url(border.png) %20 yuvarlak;</p>
+       <p id="borderimg5">border-image: url(border.png) %30 yuvarlak;</p>
+
+    </body>
+</html>
+
+<!--
+    border-image = Tüm border-image-* özelliklerini ayarlamak için bir steno özelliği
+    border-image-source = Kenarlık olarak kullanılacak görüntünün yolunu belirtir
+    border-image-slice = Kenarlık görüntüsünün nasıl dilimleneceğini belirtir
+    border-image-width = Kenarlık görüntüsünün genişliklerini belirtir
+    border-image-outset = Sınır görüntü alanının sınır kutusunun ötesine uzanma miktarını belirtir
+    border-image-repeat = Kenarlık görüntüsünün tekrarlanması, yuvarlanması veya uzatılması gerektiğini belirtir
+-->

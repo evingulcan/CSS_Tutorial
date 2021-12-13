@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("images/paper.gif");
+}
+
+div.ex1 { 
+  background-color: lightgreen;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+div.ex2 { 
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 15px;
+} 
+div.ex3 {
+    color: blue;
+    border: 10px solid currentColor;
+    padding: 15px;
+}
+div.ex4 {
+    box-shadow: 0px 0px 15px currentColor;
+    border: 5px solid currentColor;
+    padding: 15px;
+}
+div.ex5 {
+    border: 2px solid red;
+}
+span {
+    border: inherit;
+}
+</style>
+</head>
+<body>
+
+<h2>Şeffaf Anahtar Kelime</h2>
+
+<div class="ex1">Bu div açık yeşil bir arka plana sahiptir.</div>
+<br>
+<div class="ex2">Bu div şeffaf bir arka plana sahiptir.</div>
+<hr>
+<h2>Currentcolor Keyword(Geçerli renk Anahtar Kelimesi)</h2>
+<p>currentcolor anahtar sözcüğü, bir öğenin color özelliğinin geçerli değerini ifade eder.</p>
+<div class="ex3">
+    Bu div öğesinin mavi metin rengi ve mavi kenarlığı vardır.
+</div>
+<hr>
+<h2>Geçerli renk Anahtar Kelimesi</h2>
+<p>Bu, gövde kısmındaki bazı metinler...</p>
+<div class="ex4">
+    <p>Bu div'in kenarlık rengi ve gölge rengi, gövde öğesinin geçerli renk değerine ayarlanır.</p>
+</div>
+<hr>
+<h2>The inherit Keyword</h2>
+<div class="ex5">
+Burada, <span>yayılma öğesinin </span>  kenarlık ayarları üst öğeden devralınır.
+</div>
+<br>
+<div class="ex5" style="border: 2px dotted blue;">
+Burada,<span>yayılma öğesinin</span> kenarlık ayarları da üst öğeden devralınır.
+</div>
+</body>
+</html>

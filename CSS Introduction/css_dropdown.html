@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown1-content a:hover {background-color: #f1f1f1}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+.dropdown1:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown2:hover .dropdown2-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn1 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown3:hover .dropbtn1 {
+  background-color: red;
+}
+
+li.dropdown3 {
+  display: inline-block;
+}
+
+.dropdown3-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown3-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown3-content a:hover {background-color: #f1f1f1;}
+
+.dropdown3:hover .dropdown3-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Açılır içeriği açmak için fareyi aşağıdaki metnin üzerine getirin.</p>
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div>
+<hr>
+<h2>Dropdown Menu</h2>
+<p>Açılır menüyü açmak için fareyi düğmenin üzerine getirin.</p>
+<div class="dropdown1">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown1-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>
+<p><b>Not:</b> Test bağlantıları için href="#" kullanıyoruz. Gerçek bir web sitesinde bu URL'ler olacaktır.</p>
+<hr>
+<h2>Dropdown Image</h2>
+<p>Açılır içeriği açmak için fareyi aşağıdaki resmin üzerine getirin.</p>
+
+<div class="dropdown2">
+  <img src="img/img_tree.png" alt="Tree" width="100" height="50">
+  <div class="dropdown2-content">
+  <img src="img/img_tree.png" alt="Tree" width="300" height="200">
+  <div class="desc">Beautiful Cinque Terre</div>
+  </div>
+</div>
+<hr>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li class="dropdown3">
+      <a href="javascript:void(0)" class="dropbtn1">Dropdown</a>
+      <div class="dropdown3-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
+  
+  <h3>Dropdown Menu inside a Navigation Bar</h3>
+  <p>Açılır menüyü görmek için fareyle "Açılır" bağlantısının üzerine gelin.</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+  position: absolute;
+  left: 50px;
+  width: calc(100% - 100px);
+  border: 1px solid black;
+  background-color: yellow;
+  padding: 5px;
+}
+#div2 {
+    background-color: blueviolet;
+    height: 100px;
+    width: max(50%, 300px);
+}
+#div3 {
+
+    background-color: cadetblue;
+    height: 100px;
+    width: min(50%, 300px);
+}
+</style>
+</head>
+<body>
+
+<h1>calc() İşlevi</h1>
+
+<p>Pencerenin her iki tarafı ile pencerenin kenarları arasında 50 piksel boşluk olacak şekilde pencere boyunca uzanan bir div oluşturun:</p>
+
+<div id="div1">Bazı metin...</div>
+<br>
+<hr>
+<br>
+<h1>max() Fonksiyonu</h1>
+
+<p>#div2'in genişliğini en büyük değere, %50 veya 300 piksele ayarlamak için max() kullanın:</p>
+
+<div id="div2">Bazı metin...</div>
+
+<p>Efekti görmek için tarayıcı penceresini yeniden boyutlandırın.</p>
+
+<hr>
+
+<h1>min() Fonksiyonu</h1>
+
+<p>#div3'in genişliğini en küçük değere, %50 veya 300 piksele ayarlamak için min() kullanın:</p>
+
+<div id="div1">Bazı metin...</div>
+<br>
+<p>Efekti görmek için tarayıcı penceresini yeniden boyutlandırın.</p>
+
+
+</body>
+</html>
+<!--
+    calc() = CSS özellik değerlerini belirlemek için hesaplamalar yapmanızı sağlar
+    max() = Özellik değeri olarak virgülle ayrılmış bir değerler listesinden en büyük değeri kullanır
+    min() =  Özellik değeri olarak virgülle ayrılmış bir değerler listesinden en küçük değeri kullanır
+-->

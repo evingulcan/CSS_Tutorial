@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #1d29d1;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.relativee {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<h2>position: static;</h2>
+<p>Konumlu bir öğe: statik; herhangi bir özel şekilde konumlandırılmamıştır; her zaman sayfanın normal akışına göre konumlandırılır:</p>
+<div class="static">
+    Bu div öğesinin konumu: statik;
+</div>
+
+<h2>position: relative;</h2>
+<p>Konumu olan bir öğe: göreceli; normal konumuna göre konumlandırılır:</p>
+<div class="relative">
+    Bu div öğesinin konumu: göreceli;
+</div>
+
+<h2>position: fixed;</h2>
+<p>Konumu olan bir eleman: sabit; görünüm alanına göre konumlandırılır, yani sayfa kaydırılsa bile her zaman aynı yerde kalır:</p>
+<div class="fixed">
+    Bu div öğesinin konumu: sabit;
+</div>
+
+<h2>position: absolute;</h2>
+<p>Konumu olan bir öğe: mutlak; en yakın konumlanmış ataya göre konumlanmıştır (sabit gibi, görüntü alanına göre konumlanmak yerine):</p>
+<div class="relativee">Bu div öğesinin konumu: göreceli;
+  <div class="absolute">Bu div öğesinin konumu: mutlak;</div>
+</div>
+
+<p>Yapışkan konumlandırmanın nasıl çalıştığını anlamak için bu çerçevenin içinde <b>gezinmeye</b> çalışın .</p>
+
+<div class="sticky">Ben yapışkanım!</div>
+
+<div style="padding-bottom:2000px">
+  <p>Bu örnekte, kaydırma konumuna ulaştığınızda yapışkan öğe sayfanın en üstüne (üst: 0) yapışır..</p>
+  <p>Yapışkanlığı kaldırmak için geri kaydırın.</p>
+  <p>Kaydırmayı etkinleştirmek için bazı metinler. Ama dava senin sağında yüceltiliyor, benim tek yaptığım onu ​​üzmek. Mücadele getirir ve reddedilmek zorunda değildir. Bunlar tek kullanımlık olmuş olabilir. Zevkleri ve sıkıntıları yoktur.</p>
+  <p>Kaydırmayı etkinleştirmek için bazı metinler. Ama dava senin sağında yüceltiliyor, benim tek yaptığım onu ​​üzmek. Mücadele getirir ve reddedilmek zorunda değildir. Bunlar tek kullanımlık olmuş olabilir. Zevkleri ve sıkıntıları yoktur.</p>
+</div>
+
+</body>
+</html>
+<!--
+    bottom = Konumlandırılmış bir kutunun alt kenar boşluğunu ayarlar
+    clip = Kesinlikle konumlandırılmış bir öğeyi klipsler
+    left = Konumlandırılmış bir kutu için sol kenar boşluğunu ayarlar
+    position = Bir öğe için konumlandırma türünü belirtir
+    right = Konumlandırılmış bir kutu için sağ kenar boşluğunu ayarlar
+    top = Konumlandırılmış bir kutunun üst kenar boşluğunu ayarlar
+-->

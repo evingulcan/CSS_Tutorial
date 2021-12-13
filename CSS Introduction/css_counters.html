@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+h1 {
+    counter-reset: subsection;
+}
+h1.sec::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+h2.sect::before {
+    counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+
+}
+</style>
+</head>
+<body>
+
+<h1>Using CSS Counters</h1>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Python Tutorial</h2>
+<h2>SQL Tutorial</h2>
+<hr>
+
+<h1 class="sec">HTML/CSS Tutorials</h1>
+<h2 class="sect">HTML</h2>
+<h2 class="sect">CSS</h2>
+<h2 class="sect">Bootstrap</h2>
+<h2 class="sect">W3.CSS</h2>
+
+<h1 class="sec">Scripting Tutorials</h1>
+<h2 class="sect">JavaScript</h2>
+<h2 class="sect">jQuery</h2>
+<h2 class="sect">React</h2>
+
+<h1 class="sec">Programming Tutorials</h1>
+<h2 class="sect">Python</h2>
+<h2 class="sect">Java</h2>
+<h2 class="sect">C++</h2>
+
+<hr>
+<ol>
+    <li>item</li>
+    <li>item
+    <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+        </li>
+        <li>item</li>
+    </ol>
+  </li>
+        <li>item</li>
+        <li>item</li>
+</ol>
+   <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+   </ol>
+</body>
+</html>
+<!--
+    content = Oluşturulan içeriği eklemek için ::before ve ::after sözde öğelerle birlikte kullanılır
+    counter-increment = Bir veya daha fazla sayaç değerini artırır
+    counter-reset = Bir veya daha fazla sayaç oluşturur veya sıfırlar
+    counter() =  Adlandırılmış sayacın geçerli değerini döndürür
+-->

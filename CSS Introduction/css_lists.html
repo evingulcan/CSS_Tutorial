@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          ul.a {
+              list-style-type: circle;
+          }
+          ul.b {
+              list-style-type: square;
+          }
+          ol.c {
+              list-style-type: upper-roman;
+          }
+          ol.d {
+              list-style-type: lower-alpha;
+          }
+          ul.e {
+              list-style-position: outside;
+          }
+          ul.f {
+              list-style-position: inside;
+          }
+         ul.demo {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+         }
+         ol.demo {
+             background: #ff9999;
+             padding: 20px;
+         }
+         ul.dem {
+             background: #3399ff;
+             padding: 20px;
+         }
+         li.ol {
+              background: #ffe5e5;
+              padding: 5px;
+              margin-left: 35px;
+            }
+
+         li.ul {
+              background: #cce5ff;
+             margin: 5px;
+               }
+        </style>
+    </head>
+    <body>
+        <h1>The list-style-type Property</h1>
+        <p>Sırasız listelere örnek:</p>
+        <ul class="a">
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Coca Cola</li>
+        </ul>
+        <ul class="b">
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Coca Cola</li>
+        </ul>
+
+        <p>Sıralı listelere örnek:</p>
+        <ol class="c">
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Coca Cola</li>
+        </ol>
+        <ol class="d">
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Coca Cola</li>
+        </ol>
+    <hr>
+      <h1>The list-style-position Property</h1>
+      <h2>list-style-position: outside (default):</h2>
+      <ul class="e">
+          <li>Kahve - Coffea bitkisinden elde edilen meyvelerin tohumları olan kavrulmuş kahve çekirdeklerinden hazırlanan demlenmiş bir içecek</li>
+          <li>Çay - Asya'ya özgü dökmeyen bir çalı (çalı) olan Camellia sinensis'in kurutulmuş yapraklarının üzerine sıcak veya kaynar su dökülerek yaygın olarak hazırlanan aromatik bir içecek</li>
+          <li>Coca Cola - The Coca-Cola Company tarafından üretilen gazlı bir meşrubat. İçeceğin adı, kola fıstığı (bir kafein kaynağı) ve koka yaprağı olan orijinal bileşenlerinden ikisini ifade eder.</li>
+        </ul>
+        <h2>list-style-position: inside:</h2>
+        <ul class="f">
+            <li>Kahve - Coffea bitkisinden elde edilen meyvelerin tohumları olan kavrulmuş kahve çekirdeklerinden hazırlanan demlenmiş bir içecek</li>
+            <li>Çay - Asya'ya özgü dökmeyen bir çalı (çalı) olan Camellia sinensis'in kurutulmuş yapraklarının üzerine sıcak veya kaynar su dökülerek yaygın olarak hazırlanan aromatik bir içecek</li>
+            <li>Coca Cola - The Coca-Cola Company tarafından üretilen gazlı bir meşrubat. İçeceğin adı, kola fıstığı (bir kafein kaynağı) ve koka yaprağı olan orijinal bileşenlerinden ikisini ifade eder.</li>
+          </ul>
+          <hr>
+          <p>Varsayılan liste:</p>
+          <ul>
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Coca Cola</li>
+          </ul>
+          <p>Listeden madde işaretleri, kenar boşluğu ve dolguyu kaldırın:</p>
+          <ul class="demo">
+            <li>Kahve</li>
+            <li>Çay</li>
+            <li>Coca Cola</li> 
+          </ul>
+          <hr>
+          <h1>Styling Lists With Colors</h1>
+          <ol class="demo">
+            <li class="ol">Kahve</li>
+            <li class="ol">Çay</li>
+            <li class="ol">Coca Cola</li> 
+          </ol>
+         <ul class="dem">
+            <li class="ul">Kahve</li>
+            <li class="ul">Çay</li>
+            <li class="ul">Coca Cola</li> 
+         </ul>
+   
+        </body>
+</html>
+<!--
+    list-style = Bir listenin tüm özelliklerini tek bir bildirimde ayarlar
+    list-style-image = Liste öğesi işaretçisi olarak bir resim belirtir
+    list-style-position = Liste öğesi işaretlerinin (madde işaretleri) konumunu belirtir
+    list-style-type = Liste öğesi işaretçisinin türünü belirtir
+-->

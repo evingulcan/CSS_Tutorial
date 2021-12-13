@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+div {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+p.ex1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+</style>
+</head>
+<body>
+
+<h1>Başlık 1 (orta)</h1>
+<h2>Başlık 2 (sol)</h2>
+<h3>Başlık 3 (sağ)</h3>
+
+<p>Yukarıdaki üç başlık ortaya, sola ve sağa hizalanmıştır.</p>
+<hr>
+<h1>Örnek metin hizalama: iki yana yasla</h1>
+<p>Metin hizalama: yasla; value satırları, her satırın eşit genişliğe sahip olması için uzatır (gazete ve dergilerde olduğu gibi).</p>
+<div>
+    Daha genç ve daha savunmasız yaşlarımda babam bana o zamandan beri aklımda dönüp duran bazı tavsiyeler verdi. 'Birini eleştirmek istediğinde,' dedi bana, 'bu dünyadaki tüm insanların senin sahip olduğun avantajlara sahip olmadığını hatırla.'
+</div>
+<hr>
+<p>Bu, varsayılan metin yönüdür.</p>
+<p class="ex1">Bu, sağdan sola metin yönüdür.</p>
+<hr>
+<h1>Dikey hizalama Özelliği</h1>
+
+<h2>dikey hizalama: taban çizgisi (varsayılan):</h2>
+<p>Bir <img class="a" src="img/indir.png" width="9" height="9"> varsayılan bir uyum ile görüntü.</p> 
+
+<h2>dikey hizalama: metin üstü:</h2>
+<p>Bir <img class="b" src="img/indir.png" width="9" height="9"> metin üstü hizalama ile görüntü.</p> 
+
+<h2>dikey hizalama: metin-alt:</h2>
+<p>Bir <img class="c" src="img/indir.png" width="9" height="9"> metin alt hizalama ile görüntü.</p>
+
+<h2>dikey hizalama: alt:</h2>
+<p> <img class="d" src="img/indir.png" width="9" height="9"> Alt hizalamalı bir görüntü.</p> 
+
+<h2>dikey hizalama: sup:</h2>
+<p> <img class="e" src="img/indir.png" width="9" height="9"> Süper hizalamalı bir görüntü.</p>
+
+</body>
+</html>

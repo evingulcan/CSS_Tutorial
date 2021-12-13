@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+} 
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+} 
+p.four {
+    border-style: solid;
+  border-color: red green blue yellow;
+  
+/* kırmızı üst, yeşil sağ, mavi alt ve sarı sol */
+}
+p.five {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+
+p.six {
+  border-style: solid;
+  border-color: #0000ff; /* blue */
+}
+
+p.seven {
+  border-style: solid;
+  border-color: #bbbbbb; /* grey */
+}
+p.eight {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* red */
+}
+
+p.nine {
+  border-style: solid;
+  border-color: rgb(0, 0, 255); /* blue */
+}
+
+p.ten {
+  border-style: solid;
+  border-color: rgb(187, 187, 187); /* grey */
+}
+p.eleven {
+  border-style: solid;
+  border-color: hsl(0, 100%, 50%); /* red */
+}
+
+p.twelve {
+  border-style: solid;
+  border-color: hsl(240, 100%, 50%); /* blue */
+}
+
+p.thirteen {
+  border-style: solid;
+  border-color: hsl(0, 0%, 73%); /* grey */
+}
+        </style>
+
+    </head>
+    <body>
+        <h1>kenarlık rengi Özellik</h1>
+        <p>Bu özellik, dört kenarlığın rengini belirtir:</p>
+   
+        <p class="one">Düz kırmızı kenarlık</p>
+        <p class="two">Düz bir yeşil kenarlık</p>
+        <p class="three">noktalı mavi kenarlık</p>
+        <hr>
+        <p>border-color özelliği bir ila dört değere sahip olabilir (üst kenarlık, sağ kenarlık, alt kenarlık ve sol kenarlık için):</p>
+        <p class="four">Düz bir çok renkli kenarlık</p>
+        <hr>
+        <p>Kenarlığın rengi, onaltılık bir değer (HEX) kullanılarak da belirtilebilir:</p>
+        <p class="five">Düz kırmızı kenarlık</p>
+        <p class="six">Düz bir mavi kenarlık</p>
+        <p class="seven">Düz gri bir kenarlık</p>
+        <hr>
+        <p>Kenarlığın rengi, RGB değerleri kullanılarak da belirlenebilir:</p>
+        <p class="eight">Düz kırmızı kenarlık</p>
+        <p class="nine">Düz bir mavi kenarlık</p>
+        <p class="ten">Düz gri bir kenarlık</p>
+        <hr>
+        <p>Kenarlığın rengi, HSL değerleri kullanılarak da belirlenebilir:</p>
+        <p class="eleven">Düz kırmızı kenarlık</p>
+        <p class="twelve">Düz bir mavi kenarlık</p>
+        <p class="thirteen">Düz gri bir kenarlık</p>
+       
+       
+        <p><b>Not:</b>"border-color" özelliği tek başına kullanıldığında çalışmaz. Önce kenarlıkları ayarlamak için "border-style" özelliğini kullanın.</p>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.one {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.one a {
+  display: block;
+  width: 60px;
+  background-color: #dddddd;
+}
+ul.two {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li.two a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li.two a:hover {
+    background-color: #555;
+    color: white;
+}
+ul.threen {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+}
+li.threen a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li.threen {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+li.threen:last-child {
+    border-bottom: violet;
+}
+li.threen a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+li.threen a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+body {
+    margin: 0;
+}
+ul.four {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li.four a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li.four a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+li.four a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<ul class="one">
+  <li class="one"><a href="#home">Home</a></li>
+  <li class="one"><a href="#news">News</a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">About</a></li>
+</ul>
+
+<p>Bağlantı alanını göstermek için bağlantılara bir arka plan rengi eklenir.</p>
+<p>Yalnızca metnin değil, tüm bağlantı alanının tıklanabilir olduğuna dikkat edin.</p>
+<hr>
+<h2>Vertical Navigation Bar</h2>
+
+<ul class="two">
+  <li class="two"><a href="#home">Home</a></li>
+  <li class="two"><a href="#news">News</a></li>
+  <li class="two"><a href="#contact">Contact</a></li>
+  <li class="two"><a href="#about">About</a></li>
+</ul>
+<hr>
+<h2>Vertical Navigation Bar</h2>
+<p>Bu örnekte, gezinme bağlantılarını ortalıyoruz ve gezinme çubuğuna bir kenarlık ekliyoruz.</p>
+<ul class="threen">
+    <li class="threen"><a class="active" href="#home">Home</a></li>
+    <li class="threen"><a href="#news">News</a></li>
+    <li class="threen"><a href="#contact">Contact</a></li>
+    <li class="threen"><a href="#about">About</a></li>
+  </ul>
+<hr>
+<ul class="four">
+    <li class="four"><a class="active" href="#home">Home</a></li>
+    <li class="four"><a href="#news">News</a></li>
+    <li class="four"><a href="#contact">Contact</a></li>
+    <li class="four"><a href="#about">About</a></li>
+  </ul>
+  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<h2>Fixed Full-height Side Nav</h2>
+<h3>Bu alanı kaydırmaya çalışın ve sidenav'ın sayfaya nasıl yapıştığını görün</h3>
+<p>Bu div öğesinin %25'lik bir sol kenar boşluğuna sahip olduğuna dikkat edin. Bunun nedeni, yan gezinmenin %25 genişliğe ayarlanmış olmasıdır. Kenar boşluğunu kaldırırsanız, sidenav bu div'in üzerine bindirilir/oturulur.</p>
+<p>Ayrıca overflow:auto'yu sidenav olarak ayarladığımıza dikkat edin. Bu, sidenav çok uzun olduğunda bir kaydırma çubuğu ekleyecektir (örneğin, içinde 50'den fazla bağlantı varsa).</p>
+<p>Some text..</p>
+<p>Some text..</p>
+<p>Some text..</p>
+<p>Some text..</p>
+<p>Some text..</p>
+<p>Some text..</p>
+<p>Some text..</p>
+</div>
+</body>
+</html>
+

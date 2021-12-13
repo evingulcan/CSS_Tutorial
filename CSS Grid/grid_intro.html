@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+<p>Bir Izgara Düzeni, <em>display</em> özelliği <em>grid</em> veya <em>inline-grid</em> olarak ayarlanmış bir üst öğeye sahip olmalıdır.</p>
+
+<p>Izgara kabının doğrudan alt öğesi/elemanları otomatik olarak ızgara öğeleri haline gelir.</p>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+</html>
+
+<!--
+    column-gap = Sütunlar arasındaki boşluğu belirtir
+    gap = Satır aralığı ve sütun aralığı özellikleri için bir stenografi özelliği
+    grid = Izgara şablonu satırları, ızgara şablonu sütunları, ızgara şablonu alanları, ızgara otomatik satırları, ızgara otomatik sütunları ve ızgara otomatik akış özellikleri için kestirme bir özellik
+    grid-area = Izgara öğesi için bir ad belirtir veya bu özellik, grid-row-start, grid-column-start, grid-row-end ve grid-column-end özellikleri için bir kestirme özelliktir.
+    grid-auto-columns = Varsayılan bir sütun boyutunu belirtir
+    grid-auto-flow = Otomatik olarak yerleştirilen öğelerin ızgaraya nasıl ekleneceğini belirtir
+    grid-auto-rows = Varsayılan satır boyutunu belirtir
+    grid-column = Izgara-sütun-başlangıç ​​ve ızgara-sütun-bitiş özellikleri için bir kestirme özellik
+    grid-column-end = Izgara öğesinin nerede biteceğini belirtir
+    grid-column-gap = Sütunlar arasındaki boşluğun boyutunu belirtir
+    grid-column-start = Izgara öğesinin nereden başlatılacağını belirtir
+    grid-gap = Izgara-satır-boşluğu ve ızgara-sütun-boşluğu özellikleri için bir kestirme özellik
+    grid-row = Izgara-satır-başlangıç ​​ve ızgara-satır-bitiş özellikleri için bir kestirme özellik
+    grid-row-end = Izgara öğesinin nerede biteceğini belirtir
+    grid-row-gap = Satırlar arasındaki boşluğun boyutunu belirtir
+    grid-row-start = Izgara öğesinin nereden başlatılacağını belirtir
+    grid-template = Izgara şablonu satırları, ızgara şablonu sütunları ve ızgara alanları özellikleri için bir kısayol özelliği
+    grid-template-areas = Adlandırılmış ızgara öğelerini kullanarak sütunların ve satırların nasıl görüntüleneceğini belirtir
+    grid-template-columns = Sütunların boyutunu ve ızgara düzeninde kaç sütun olduğunu belirtir
+    grid-template-rows = Bir ızgara düzenindeki satırların boyutunu belirtir
+    row-gap = Izgara satırları arasındaki boşluğu belirtir
+
+-->

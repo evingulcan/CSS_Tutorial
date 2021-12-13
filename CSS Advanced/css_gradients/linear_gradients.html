@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          #grad1 {
+              height: 200px;
+              background-color: red;
+              background-image: linear-gradient(red, yellow);
+          }
+
+          #grad2 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(to right, red, yellow);
+          }
+          #grad3 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(to bottom right, red, yellow);
+          }
+          #grad4 {
+           height: 200px;
+           background-color: red;
+           background-image: linear-gradient(0deg, red, yellow);
+          }
+          #grad5 {
+            height: 200px;
+            background-color: red;
+           background-image: linear-gradient(90deg, red, yellow);
+          }
+          #grad6 {
+            height: 200px;
+            background-color: red;
+           background-image: linear-gradient(180deg, red, yellow);
+          }
+          #grad7 {
+            height: 200px;
+            background-color: red;
+           background-image: linear-gradient(-90deg, red, yellow);
+          }
+          #grad8 {
+            height: 200px;
+            background-color: red;
+           background-image: linear-gradient(red, yellow, green);
+          }
+          #grad9 {
+            height: 200px;
+            background-color: red;
+           background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+          }
+          #grad10 {
+            height: 200px;
+            background-color: red;
+           background-image: linear-gradient(red 10%, green 85%, blue 90%);
+          }
+        </style>
+    </head>
+    <body>
+      <h1>Doğrusal Gradyan - Yukarıdan Aşağıya</h1>
+       <p>Bu doğrusal gradyan, üstte kırmızı başlar, altta sarıya geçer:</p>
+       <div id="grad1"></div>
+       <hr>
+       <h1>Doğrusal Gradyan - Soldan Sağa</h1>
+       <p>Bu doğrusal gradyan soldan kırmızıya başlar ve sarıya döner (sağa doğru):</p>
+       <div id="grad2"></div>
+       <hr>
+       <h1>Lineer Gradyan - Çapraz</h1>
+       <p>Bu doğrusal gradyan sol üstte kırmızı başlar ve sarıya döner (sağ altta):</p>
+       <div id="grad3"></div>
+       <hr>
+       <h1></h1>
+       <div id="grad4" style="text-align: center;">0deg</div><br>
+       <div id="grad5" style="text-align: center;">90deg</div><br>
+       <div id="grad6" style="text-align: center;">180deg</div><br>
+       <div id="grad7" style="text-align: center;">-90deg</div><br>
+       <hr>
+       <h1>Doğrusal Degradeler - Çoklu Renk Durakları</h1>
+       <p><strong>Not:</strong>Yüzdeler belirtilmediğinde renk durakları eşit aralıklarla yerleştirilir.</p>
+       <h2>3 Renk Durağı (eşit aralıklı):</h2>
+       <div id="grad8"></div><br>
+       <h2>7 Renk Durağı (eşit aralıklı):</h2>
+       <div id="grad9"></div><br>
+       <h2>3 Renk Durağı (eşit aralıklı değil):</h2>
+       <div id="grad10"></div><br>
+    </body>
+</html>

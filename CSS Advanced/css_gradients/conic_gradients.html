@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         #grad1 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: conic-gradient(red, yellow, green);
+         }
+         #grad2 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: conic-gradient(red, yellow, green, blue, black);
+         }
+         #grad3 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+         }
+         #grad4 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            border-radius: 50%;
+         }
+         #grad5 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+         }
+         #grad6 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: conic-gradient(from 90deg, red, yellow, green);
+            border-radius: 50%;
+         }
+         #grad7 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image:conic-gradient(at 60% 45%, red, yellow, green);
+            border-radius: 50%;
+         }
+         #grad8 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image:repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+         }
+         #grad9 {
+            height: 200px;
+            width: 200px;
+            background-color: red; 
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+         }
+        </style>
+    </head>
+    <body>
+      <h1>Konik Gradyan - Üç Renk</h1>
+      <div id="grad1"></div>
+      <hr>
+      <h1>Konik Gradyan - Beş Renk</h1>
+      <div id="grad2"></div>
+      <hr>
+      <h1>Konik Gradyan - Her renk için tanımlanmış derece</h1>
+      <div id="grad3"></div>
+      <hr>
+      <h1>Konik Gradyan - Pasta Grafiği</h1>
+      <div id="grad4"></div>
+      <hr>
+      <h1>Konik Gradyan - Pasta Grafiği</h1>
+      <div id="grad5"></div>
+      <hr>
+      <h1>Konik Gradyan - Bir açıdan</h1>
+      <div id="grad6"></div>
+      <hr>
+      <h1>Konik Gradyan - Belirtilen merkez konumuyla</h1>
+      <div id="grad7"></div>
+      <hr>
+      <h1>Konik Gradyanı Tekrarlama</h1>
+      <div id="grad8"></div>
+      <hr>
+      <h1>Renk başlangıçlı ve bitişli bir Konik Gradyanı Tekrarlama</h1>
+      <div id="grad9"></div>
+     
+    </body>
+</html>
+<!--
+conic-gradient() = 
+Konik bir gradyan oluşturur. En az iki renk tanımlayın (bir merkez noktasının etrafında)
+linear-gradient() = Doğrusal bir gradyan oluşturur. En az iki renk tanımlayın (yukarıdan aşağıya)
+radial-gradient() = Radyal bir degrade oluşturur. En az iki renk tanımlayın (merkezden kenarlara)
+repeating-conic-gradient() = Konik bir gradyanı tekrarlar
+repeating-linear-gradient() = Doğrusal bir gradyanı tekrarlar
+repeating-radial-gradient() = Radyal degradeyi tekrarlar
+
+-->

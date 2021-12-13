@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /* Araç ipucu kabı */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;/* Üzerine gelinebilir metnin altında noktalar istiyorsanız */
+}
+
+/* Araç ipucu metni */
+.tooltip .tooltiptext1 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+/* Araç ipucu metnini konumlandırın - aşağıdaki örneklere bakın! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+ 
+}
+/* Fareyi araç ipucu kabının üzerine getirdiğinizde araç ipucu metnini göster */
+.tooltip:hover .tooltiptext1 {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext2 {
+    visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+/* Araç ipucu metnini konumlandırın - aşağıdaki örneklere bakın! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+ 
+}
+.tooltip:hover .tooltiptext2 {
+  visibility: visible;
+}
+.tooltip .tooltiptext3 {
+    visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+/* Araç ipucu metnini konumlandırın - aşağıdaki örneklere bakın! */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+ 
+}
+.tooltip:hover .tooltiptext3 {
+  visibility: visible;
+}
+.tooltip .tooltiptext4 {
+    visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+/* Araç ipucu metnini konumlandırın - aşağıdaki örneklere bakın! */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+ 
+}
+.tooltip:hover .tooltiptext4 {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Basic Tooltip - Temel Araç İpucu</h2>
+<p>Fareyi aşağıdaki metnin üzerine getirin:</p>
+<div class="tooltip">üzerime gel
+  <span class="tooltiptext1">Sağ Araç İpucu</span>
+  <span class="tooltiptext2">Sol Araç İpucu</span>
+  <span class="tooltiptext3">Üst Araç İpucu</span>
+  <span class="tooltiptext4">Alt Araç İpucu</span>
+</div>
+
+</body>
+</html>

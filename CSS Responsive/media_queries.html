@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.example {
+  padding: 20px;
+  color: white;
+}
+/* Ekstra küçük cihazlar (telefonlar, 600 piksel ve aşağısı) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Küçük cihazlar (portre tabletler ve büyük telefonlar, 600 piksel ve üstü) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Orta ölçekli cihazlar (yatay tabletler, 768 piksel ve üstü) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Büyük cihazlar (dizüstü bilgisayarlar/masaüstü bilgisayarlar, 992 piksel ve üstü) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Ekstra büyük cihazlar (büyük dizüstü ve masaüstü bilgisayarlar, 1200 piksel ve üstü) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
+</style>
+</head>
+<body>
+
+<h2>Typical Media Query Breakpoints(Tipik Medya Sorgu Kesme Noktaları)</h2>
+<p class="example">Bu paragrafın arka plan renginin farklı ekran boyutlarında nasıl değiştiğini görmek için tarayıcı penceresini yeniden boyutlandırın.</p>
+
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.ex1 {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,10px);
+}
+div.ex2 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+div#myDiv {
+    transform: rotate(-20deg);
+}
+div#myDiv1 {
+    transform: skewX(20deg);
+}
+div#myDiv2 {
+    transform: skewY(20deg);
+}
+div#myDiv3 {
+    transform: skew(20deg, 10deg);
+}
+div#myDiv4 {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+div#myDiv5 {
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+div.ex3 {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(2,3);
+}
+div.ex4 {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(2);
+}
+div.ex5 {
+    margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(3);
+}
+</style>
+</head>
+<body>
+
+<h1>translate() Yöntemi</h1>
+<p>translate() yöntemi, bir öğeyi mevcut konumundan taşır:</p>
+<div class="ex1">
+    Bu div öğesi, mevcut konumundan 50 piksel sağa ve 10 piksel aşağı taşınır.
+</div>
+
+<hr>
+
+<h1>rotate() Yöntemi</h1>
+<p>döndürme() yöntemi, bir öğeyi saat yönünde veya saat yönünün tersine döndürür.</p>
+<div class="ex2">
+    Bu normal bir div öğesi.
+</div>
+<div class="ex2" id="myDiv">
+    Bu div öğesi saat yönünün tersine 20 derece döndürülür.
+</div>
+
+<hr>
+
+<h1>scale() Yöntemi</h1>
+<p>scale() yöntemi, bir öğenin boyutunu artırır veya azaltır.</p>
+<div class="ex3">
+    Bu div öğesi, orijinal genişliğinin iki katı ve orijinal yüksekliğinin üç katıdır.
+</div>
+
+<hr>
+
+<h1>scaleX() Yöntemi</h1>
+<p>scaleX() yöntemi, bir öğenin genişliğini artırır veya azaltır.</p>
+<div class="ex4">
+    Bu div öğesi, orijinal genişliğinin iki katıdır.
+</div>
+
+<hr>
+
+<h1>scaleY() Yöntemi</h1>
+<p>scaleY() yöntemi, bir öğenin yüksekliğini artırır veya azaltır.
+
+</p>
+<div class="ex5">
+    Bu div öğesi, orijinal yüksekliğinin üç katıdır.
+</div>
+
+<hr>
+
+<h1>skewX() Yöntemi</h1>
+<p>skewX() yöntemi, bir öğeyi verilen açıyla X ekseni boyunca yayar.</p>
+<div class="ex2">Bu normal bir div öğesi.</div>
+<div class="ex2" id="myDiv1">
+    Bu div öğesi, X ekseni boyunca 20 derece eğridir.
+</div>
+
+<hr>
+
+<h1>skewY() Yöntemi</h1>
+<p>skewY() yöntemi, bir öğeyi verilen açıyla Y ekseni boyunca yayar.</p>
+<div class="ex2">Bu normal bir div öğesi.</div>
+<div class="ex2" id="myDiv1">
+    Bu div öğesi, Y ekseni boyunca 20 derece eğridir.
+</div>
+
+<hr>
+
+<h1>skew() Yöntemi</h1>
+<p>skew() yöntemi, bir öğeyi belirli bir açıya yayar.</p>
+<div class="ex2">Bu normal bir div öğesi.</div>
+<div class="ex2" id="myDiv3">Bu div öğesi, X ekseni boyunca 20 derece ve Y ekseni boyunca 10 derece eğridir.</div>
+
+<hr>
+
+<h1>matrix() Yöntemi</h1>
+<p>matrix() yöntemi, tüm 2B dönüştürme yöntemlerini tek bir yöntemde birleştirir.</p>
+<div class="ex2">Bu normal bir div öğesi.</div>
+<div class="ex2" id="myDiv4">matrix() yöntemini kullanma.</div>
+<div class="ex2" id="myDiv5">matrix() yönteminin başka bir kullanımı.</div>
+
+</body>
+</html>
+<!--
+    transform = Bir öğeye 2B veya 3B dönüştürme uygular
+    transform-origin = Dönüştürülen öğelerdeki konumu değiştirmenizi sağlar
+    matrix(n,n,n,n,n,n) = Altı değerden oluşan bir matris kullanarak bir 2B dönüşümü tanımlar
+    translate(x,y) = Öğeyi X ve Y ekseni boyunca hareket ettirerek bir 2B öteleme tanımlar
+    translateX(n) = Öğeyi X ekseni boyunca hareket ettirerek bir 2B çeviri tanımlar
+    translateY(n) = Öğeyi Y ekseni boyunca hareket ettirerek bir 2B öteleme tanımlar
+    scale(x,y) = Öğelerin genişliğini ve yüksekliğini değiştirerek 2B ölçek dönüşümünü tanımlar
+    scaleX(n) =  Öğenin genişliğini değiştirerek 2B ölçek dönüşümünü tanımlar
+    scaleY(n) = Öğenin yüksekliğini değiştirerek 2B ölçek dönüşümünü tanımlar
+    rotate(angle) = 2B döndürme tanımlar, açı parametrede belirtilir
+    skew(x-angle,y-angle) = X ve Y ekseni boyunca bir 2B çarpık dönüşüm tanımlar
+    skewX(angle) = X ekseni boyunca bir 2B eğrilik dönüşümü tanımlar
+    skewY(angle) = Y ekseni boyunca 2B eğrilik dönüşümü tanımlar
+
+-->

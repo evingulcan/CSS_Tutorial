@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        div.one {
+            background-color: #eee;
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+            overflow: visible;
+        }
+        div.two {
+            background-color: #eee;
+            width: 200px;
+            height: 50px;
+            border: 1px dotted black;
+            overflow: hidden;
+        }
+        div.threen {
+            background-color: #eee;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        div.four {
+           background-color: #eee;
+           width: 200px;
+           height: 50px;
+           border: 1px dotted black;
+           overflow: auto;
+        }
+        div.five {
+          background-color: #eee;
+          width: 200px;
+          height: 50px;
+          border: 1px dotted black;
+          overflow-x: hidden;
+          overflow-y: scroll ;
+        }
+        </style>
+    </head>
+    <body>
+
+        <h1>Overflow: visible</h1>
+        <p>Varsayılan olarak, taşma görünürdür, yani kırpılmaz ve öğe kutusunun dışında işlenir:</p>
+        <div class="one">
+            Düzen üzerinde daha iyi kontrol sahibi olmak istediğinizde taşma özelliğini kullanabilirsiniz. Taşma özelliği, içerik bir öğenin kutusundan taşarsa ne olacağını belirtir.
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <h1>Overflow: hidden</h1>
+        <p>Gizli değerle taşma kırpılır ve içeriğin geri kalanı gizlenir:</p>
+        <p>Nasıl çalıştığını anlamak için taşma özelliğini kaldırmayı deneyin.</p>
+        <div>
+            Düzen üzerinde daha iyi kontrol sahibi olmak istediğinizde taşma özelliğini
+        </div>
+        <hr>
+        <h1>Overflow: scroll</h1>
+        <p>Taşma değeri kaydırılacak şekilde ayarlandığında, taşma kırpılır ve kutunun içinde kaydırmak için bir kaydırma çubuğu eklenir. Bunun hem yatay hem de dikey olarak bir kaydırma çubuğu ekleyeceğini unutmayın (ihtiyacınız olmasa bile):</p>
+        <div class="threen">
+            Düzen üzerinde daha iyi kontrol sahibi olmak istediğinizde taşma özelliğini kullanabilirsiniz. Taşma özelliği, içerik bir öğenin kutusundan taşarsa ne olacağını belirtir.
+        </div>
+        <hr>
+        <h1>Overflow: auto</h1>
+        <p>Otomatik değer kaydırmaya benzer, yalnızca gerektiğinde kaydırma çubukları ekler:</p>
+        <div class="four">
+            Düzen üzerinde daha iyi kontrol sahibi olmak istediğinizde taşma özelliğini kullanabilirsiniz. Taşma özelliği, içerik bir öğenin kutusundan taşarsa ne olacağını belirtir.
+        </div>
+        <hr>
+        <h1>Overflow-x and overflow-y</h1>
+        <p>Ayrıca içeriğin taşmasını yatay veya dikey olarak değiştirebilirsiniz.</p>
+        <p>taşma-x, içeriğin sol/sağ kenarlarıyla ne yapılacağını belirtir.</p>
+        <p>taşma-y, içeriğin üst/alt kenarlarıyla ne yapılacağını belirtir.</p>
+        <div class="five">
+            Düzen üzerinde daha iyi kontrol sahibi olmak istediğinizde taşma özelliğini kullanabilirsiniz. Taşma özelliği, içerik bir öğenin kutusundan taşarsa ne olacağını belirtir.
+        </div>
+   
+    </body>
+</html>
+<!--
+    overflow = İçerik bir öğenin kutusundan taşarsa ne olacağını belirtir
+    overflow-wrap = Tarayıcının, kapsayıcısını taşması durumunda uzun kelimeler içeren satırları kesip kesemeyeceğini belirtir.
+    overflow-x = Öğenin içerik alanından taşarsa içeriğin sol/sağ kenarlarıyla ne yapılacağını belirtir
+    overflow-y = Öğenin içerik alanından taşarsa, içeriğin üst/alt kenarlarıyla ne yapılacağını belirtir
+-->

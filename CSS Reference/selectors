@@ -1,0 +1,62 @@
+
+
+.class -- .intro = class="intro" ile tüm öğeleri seçer
+.class1.class2 -- .name1.name2 = class özniteliği içinde hem ad1 hem de ad2 olarak ayarlanmış tüm öğeleri seçer
+.class1 .class2 -- .name1 .name2 = name1'e sahip bir öğenin soyundan gelen ad2'ye sahip tüm öğeleri seçer
+#id -- #firstname = id="firstname" ile öğeyi seçer
+* -- * = Tüm öğeleri seçer
+element -- p = Tüm <p> öğelerini seçer
+element.class -- p.intro = class="intro" ile tüm <p> öğelerini seçer
+element,element -- div, p = Tüm <div> öğelerini ve tüm <p> öğelerini seçer
+element element -- div p = <div> elementlerinin içindeki tüm <p> elementlerini seçer
+element>element -- div > p = Üst öğenin bir <div> öğesi olduğu tüm <p> öğelerini seçer
+element+element -- div + p = <div> elementlerinden hemen sonra gelen ilk <p> elementini seçer
+element1~element2 -- p ~ ul = Önünde bir <p> öğesi bulunan her <ul> öğesini seçer
+[öznitelik] -- [hedef] = Hedef özniteliği olan tüm öğeleri seçer
+[attribute=value] -- [target=_blank] = target="_blank" içeren tüm öğeleri seçer
+[öznitelik~=değer] -- [başlık~=çiçek] = "çiçek" kelimesini içeren bir başlık niteliğine sahip tüm öğeleri seçer
+[attribute|=value] -- [lang|=en] = "en" değerine eşit veya "en-" ile başlayan bir lang öznitelik değerine sahip tüm öğeleri seçer
+[attribute^=value] -- a[href^="https"] = href öznitelik değeri "https" ile başlayan her <a> öğesini seçer
+[attribute$=value] -- a[href$=".pdf"] = href öznitelik değeri ".pdf" ile biten her <a> öğesini seçer
+[attribute*=value] -- a[href*="w3schools"] = href öznitelik değeri "w3schools" alt dizesini içeren her <a> öğesini seçer
+:active -- a:active = Etkin bağlantıyı seçer
+::after -- p::after = Her <p> öğesinin içeriğinden sonra bir şeyler ekleyin
+::before -- p::before = Her <p> öğesinin içeriğinden önce bir şey ekleyin
+:checke -- input:checked = Kontrol edilen her <input> öğesini seçer
+:default -- input:default = Varsayılan <input> öğesini seçer
+:disabled -- input:disabled = Devre dışı bırakılan her <input> öğesini seçer
+:empty -- p:empty = Alt öğesi olmayan her <p> öğesini seçer (metin düğümleri dahil)
+:enabled -- input:enabled = Etkinleştirilen her <input> öğesini seçer
+:first-child -- p:first-child = Ebeveyninin ilk çocuğu olan her <p> öğesini seçer
+::first-letter -- p::first-letter = Her <p> öğesinin ilk harfini seçer
+::first-line -- p::first-line = Her <p> öğesinin ilk satırını seçer
+:first-of-type -- p:first-of-type = Üst öğesinin ilk <p> öğesi olan her <p> öğesini seçer
+:focus -- input:focus = Odağı olan giriş öğesini seçer
+:fullscreen -- :fullscreen = Tam ekran modunda olan öğeyi seçer
+:hover -- a:hover =  Fareyle üzerine gelindiğinde bağlantıları seçer
+:in-range -- input:in-range = Belirtilen aralık içinde bir değere sahip girdi öğelerini seçer
+:indeterminate -- input:indeterminate = Belirsiz durumda olan girdi öğelerini seçer
+:invalid -- input:invalid = Geçersiz bir değere sahip tüm girdi öğelerini seçer
+:lang(language) -- p:lang(it) = lang özniteliği "it"e eşit olan her <p> öğesini seçer (İtalyanca)
+:last-child -- p:last-child = Ebeveyninin son çocuğu olan her <p> öğesini seçer
+:last-of-type -- p:last-of-type = üst öğesinin son <p> öğesi olan her <p> öğesini seçer
+:link -- a:link = Ziyaret edilmemiş tüm bağlantıları seçer
+::marker -- ::marker = Liste öğelerinin işaretçilerini seçer
+:not(selector) -- :not(p) = <p> öğesi olmayan her öğeyi seçer
+:nth-child(n) -- p:nth-child(2) = Ebeveyninin ikinci çocuğu olan her <p> öğesini seçer
+:nth-last-child(n) -- p:nth-last-child(2) = Son alt öğeden başlayarak üst öğesinin ikinci çocuğu olan her <p> öğesini seçer
+:nth-son-of-type(n) -- p:nth-son-of-type(2) = Son alt öğeden başlayarak üst öğesinin ikinci <p> ​​öğesi olan her <p> öğesini seçer
+:nth-of-type(n) -- p:nth-of-type(2) = Üst öğesinin ikinci <p> ​​öğesi olan her <p> öğesini seçer
+:only-of-type -- p: only-of-type = Üst öğesinin tek <p> öğesi olan her <p> öğesini seçer
+:only-child -- p:only-child = Ebeveyninin tek çocuğu olan her <p> öğesini seçer
+:optional -- input:optional = "Gerekli" özniteliği olmayan giriş öğelerini seçer
+:out-of-range -- input:out-of-range = Belirtilen aralığın dışında bir değere sahip girdi öğelerini seçer
+::placeholder -- input::placeholder = Belirtilen "yer tutucu" özniteliği ile girdi öğelerini seçer
+:read-only -- input:read-only = Belirtilen "salt okunur" özniteliği olan girdi öğelerini seçer
+:read-write -- input:read-write = "salt okunur" özniteliği belirtilmemiş giriş öğelerini seçer
+:required -- input:required = Belirtilen "zorunlu" özniteliğe sahip girdi öğelerini seçer
+:root -- :root = Belgenin kök öğesini seçer
+::selection -- ::selection = Bir öğenin kullanıcı tarafından seçilen kısmını seçer
+:target -- #news:target = Geçerli etkin #news öğesini seçer (bu bağlantı adını içeren bir URL'ye tıklandı)
+:valid -- input:valid = Geçerli bir değere sahip tüm girdi öğelerini seçer
+:visited -- a:visited = Ziyaret edilen tüm bağlantıları seçer

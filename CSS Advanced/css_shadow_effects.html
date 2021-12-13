@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1.one {
+  text-shadow: 2px 2px;
+}
+h1.two {
+  text-shadow: 2px 2px red;
+}
+h1.threen {
+    text-shadow: 2px 2px 5px red;
+}
+h1.four {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+h1.five {
+    text-shadow: 0 0 3px #FF0000;
+}
+h1.six {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+h1.seven {
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h1.eight {
+    color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+div.one {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px;
+}
+div.two {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px grey;
+}
+div.threen {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px grey;
+}
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+div.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+div.container1 {
+  padding: 10px;
+}
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container2 {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="one">Metin-gölge efekti!</h1><br>
+<h1 class="two">Metin-gölge efekti!</h1><br>
+<h1 class="threen">Metin-gölge efekti!</h1><br>
+<h1 class="four">Metin-gölge efekti!</h1><br>
+<h1 class="five">Kırmızı neon parıltılı metin gölgesi!</h1><br>
+<h1 class="six">Kırmızı ve mavi neon parıltılı metin gölgesi!</h1><br>
+<h1 class="seven">Metin-gölge efekti!</h1><br>
+<h1 class="eight">Metin etrafında sınır!</h1><br>
+<hr>
+<h1>kutu gölge Özellik(box-shadow)</h1>
+<div class="one">Bu, kutu gölgeli bir div öğesidir.</div>
+<hr>
+<div class="two">Bu, kutu gölgeli bir div öğesidir.</div>
+<hr>
+<div class="threen">Bu, kutu gölgeli bir div öğesidir.</div>
+<hr>
+<br>
+<h1>Kart(Cards)</h1>
+<p>Box-shadow özelliği, kağıt benzeri kartlar oluşturmak için kullanılabilir:</p>
+<div class="card">
+<div class="header">
+    <h1>1</h1>
+</div>
+<div class="container1">
+<p>1 Ocak 2016</p>
+</div>
+</div>
+<hr>
+<br>
+<h2>Polaroid Görüntüler / Kartlar</h2>
+
+<p>Box-shadow özelliği, kağıt benzeri kartlar oluşturmak için kullanılabilir:</p>
+
+<div class="polaroid">
+  <img src="images/batman.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>Batman, Merkez</p>
+  </div>
+</div>
+</body>
+</html>
+<!--
+    box-shadow = Bir öğeye bir veya daha fazla gölge ekler
+    text-shadow = Metne bir veya daha fazla gölge ekler
+-->

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          p.test1 {
+              white-space: nowrap;
+              width: 200px;
+              border: 1px solid #000000;
+              overflow: hidden;
+              text-overflow: clip;
+          }
+          p.test2 {
+              white-space: nowrap;
+              width: 200px;
+              border: 1px solid #000000;
+              overflow: hidden;
+              text-overflow: ellipsis;
+          }
+          div.test3 {
+              white-space: nowrap;
+              width: 200px;
+              overflow: hidden;
+              border: 1px solid #000000;
+          }
+          div.test3:hover {
+              overflow: visible;
+          }
+          p.test4 {
+              width: 11em;
+              border: 1px solid #000000;
+              word-wrap: break-word;
+          }
+          p.test5 {
+              width: 140px;
+              border: 1px solid #000000;
+              word-break: keep-all;
+          }
+          p.test6 {
+              width: 140px;
+              border: 1px solid #000000;
+              word-break: break-all;
+          }
+          p.test7 {
+              writing-mode: horizontal-tb;
+          }
+          span.test8 {
+              writing-mode: vertical-rl;
+          }
+          p.test8 {
+              writing-mode: vertical-rl;
+          }
+        </style>
+    </head>
+    <body>
+       <h1>Metin taşması(text-overflow) Özelliği</h1>
+       <p>Aşağıdaki iki paragraf, kutuya sığmayacak kadar uzun bir metin içermektedir.</p>
+     
+       <h2>metin taşması: klip:</h2>
+       <p class="test1">Bu, kutuya sığmayacak uzun bir m</p>
+      
+       <h2>metin taşması: üç nokta:</h2>
+       <p class="test2">Bu, kutuya sığmayacak uzun bir metin</p>
+       <hr>
+
+       <p>Metnin tamamını görmek için aşağıdaki iki div'in üzerine gelin.</p>
+       <div class="test3" style="text-overflow: ellipsis;">
+        Bu, kutuya sığmayacak uzun bir metindir
+       </div>
+       <br>
+       <div class="test3" style="text-overflow: clip;">
+        Bu, kutuya sığmayacak uzun bir metindir.
+       </div>
+      <hr>
+      <h1>Kelime kaydırma(Word Wrapping) özelliği</h1>
+      <p class="test4">
+        Bu paragraf çok uzun bir kelime içeriyor: bu çok çok çok çok çok uzun bir kelime. Uzun kelime kırılacak ve bir sonraki satıra kaydırılacaktır.
+      </p>
+      <hr>
+      <h1>Word-break Özelliği</h1>
+      <p class="test5">Bu paragraf bazı metinler içeriyor. Bu satır kısa çizgide bölünür.</p>
+      <p class="test6">Bu paragraf bazı metinler içeriyor. Çizgiler herhangi bir karakterde kırılacaktır.</p>
+      <hr>
+      <h1>yazma modu Özellik</h1>
+      <p class="test7">Varsayılan yazma modu olan bazı metinler.</p>
+      <p><span class="test8"> dikey-rl</span>Bir yayılma öğesi içeren bazı metinler  yazma modu.</p>
+      <p class="test8">Yazma modu olan bazı metinler: dikey-rl.</p>
+    </body>
+</html>
+<!--
+    text-align-last = Bir metnin son satırının nasıl hizalanacağını belirtir
+    text-justify = 	Yaslanmış metnin nasıl hizalanması ve boşluk bırakılması gerektiğini belirtir
+    text-overflow = Görüntülenmeyen taşan içeriğin kullanıcıya nasıl bildirileceğini belirtir
+    word-break = CJK olmayan komut dosyaları için satır kesme kurallarını belirtir
+    word-wrap = Uzun kelimelerin bölünebilmesini ve bir sonraki satıra sarılabilmesini sağlar
+    writing-mode = Metin satırlarının yatay mı yoksa dikey mi yerleştirileceğini belirtir
+-->

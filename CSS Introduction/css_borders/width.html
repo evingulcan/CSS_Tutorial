@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         p.one {
+             border-style: solid;
+             border-width: 5px;
+         }
+         p.two {
+             border-style: solid;
+             border-width: medium;
+         }
+         p.three {
+             border-style: dotted;
+             border-width: 2px;
+         }
+         p.four {
+             border-style: dotted;
+             border-width: thick;
+         }
+         p.five {
+             border-style: double;
+             border-width: 15px;
+         }
+         p.six {
+             border-style: double;
+             border-width: thick;
+         }
+         p.seven {
+           border-style: solid;
+           border-width: 5px 20px; /* üstte ve altta 5 piksel, yanlarda 20 piksel */
+         }
+         p.eight {
+            border-style: solid;
+           border-width: 20px 5px; /* üstte ve altta 20 piksel, yanlarda 5 piksel */
+         }
+         p.nine {
+            border-style: solid;
+            border-width: 25px 10px 4px 35px; 
+           /* 25 piksel üst, 10 piksel sağ, 4 piksel alt ve 35 piksel sol */
+         }
+        </style>
+    </head>
+    <body>
+        <h2>border-width Özellik</h2>
+        <p>Bu özellik, dört sınırın genişliğini belirtir:</p>
+
+        <p class="one">Bazı metin.</p>
+        <p class="two">Bazı metin.</p>
+        <p class="three">Bazı metin.</p>
+        <p class="four">Bazı metin.</p>
+        <p class="five">Bazı metin.</p>
+        <p class="six">Bazı metin.</p>
+
+        <p><b>Not:</b>"border-width" özelliği tek başına kullanıldığında çalışmaz. Önce kenarlıkları ayarlamak için her zaman "border-style" özelliğini belirtin.</p>
+        <hr>
+        <p>border-width özelliği bir ila dört değere sahip olabilir (üst kenarlık, sağ kenarlık, alt kenarlık ve sol kenarlık için):</p>
+   
+        <p class="seven">Bazı metin.</p>
+        <p class="eight">Bazı metin.</p>
+        <p class="nine">Bazı metin.</p>
+   
+   
+    </body>
+</html>

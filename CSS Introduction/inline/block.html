@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span.a {
+                display: inline;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+            }
+            span.b {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+            }
+            span.c {
+                display: block;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+            }
+            .nav {
+                background-color: khaki;
+                list-style-type: none;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .nav li {
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>Display Özelliği</h1>
+      <h2>display: inline</h2>
+      <div>
+        Ağrının kendisi çok fazla acıdır, ancak asıl sebep 
+        acıdır. <span class="a">Suçun</span> <span class="a">sonuçları belgelenmelidir.</span> Belki de 
+        hafta sonuydu. Hamile oyuncuların eğlenceli ve kolay 
+        olma zamanı. Çalışan maya yok ama faturalar istiyor.
+
+      </div>
+
+      <h2>display:inline-block</h2>
+      <div>
+        Ağrının kendisi çok fazla acıdır, ancak asıl sebep 
+        acıdır. <span class="b">Suçun</span><span class="b">sonuçları belgelenmelidir.</span> Belki de 
+        hafta sonuydu. Hamile oyuncuların eğlenceli ve kolay 
+        olma zamanı. Çalışanmaya yok ama faturalar istiyor.
+
+      </div>
+
+      <h2>display:block</h2>
+      <div>
+        Ağrının kendisi çok fazla acıdır, ancak asıl sebep 
+        acıdır. <span class="c">Suçun</span><span class="c">sonuçları belgelenmelidir.</span> Belki de 
+        hafta sonuydu. Hamile oyuncuların eğlenceli ve kolay 
+        olma zamanı. Çalışan maya yok ama faturalar istiyor.
+      </div>
+
+      <hr>
+      <h1>Horizontal(yatay) Navigation Links</h1>
+      <p>Varsayılan olarak, liste öğeleri dikey olarak görüntülenir. Bu örnekte, bunları yatay olarak (yan yana) görüntülemek için display: inline-block kullanıyoruz.</p>
+      <p><b>Not:</b>Tarayıcı penceresini yeniden boyutlandırırsanız, çok kalabalık olduğunda bağlantılar otomatik olarak kesilir.</p>
+   
+      <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#clients">Our Clients</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+   
+    </body>
+</html>
+<!--
+    display: inline =  Bir öğeyi satır içi öğe olarak görüntülemek için kullanılır (<span> gibi). Yükseklik ve genişlik özellikleri display:inline; üzerinde etkilenmez.
+    display: block = Bir öğenin blok mu yoksa satır içi öğe olarak mı ele alınacağını ve akış düzeni, ızgara veya esnek gibi alt öğeleri için kullanılan düzeni ayarlar. Biçimsel olarak, display özelliği bir elemanın iç ve dış görüntü tiplerini ayarlar
+    display: inline-block =  Öğesinin öğe üzerinde bir genişlik ve yükseklik ayarlamasına izin vermesidir .
+-->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+               background-color: rgb(10, 148, 148);
+               }
+               h1 {
+                   color:white;
+                   text-align: center;
+               }
+               h2 {
+                   color: tomato;
+               }
+               p {
+                   font-family: Verdana, Geneva, Tahoma, sans-serif;
+                   font-size: 20px;
+                   color: yellow;
+               }
+               #para1 {
+                text-align: center;
+                color: violet;
+               }
+               .center {
+                   text-align: center;
+                   color: red;
+               }
+               p.class {
+                   text-align: center;
+                   color: salmon;
+               }
+               p.large {
+                   font-size: 300%;
+               }
+               h3, h4 {
+                   text-align: center;
+                   color: lightgreen;
+               }
+               /*
+              Sayfadaki her öğe stilden etkilenecektir.
+               * {
+                  text-align: center;
+                  color: blue;
+                }
+                */
+        </style>
+    </head>
+    <body>
+        <h1>İlk CSS Örneğim</h1>
+        <h2>Merhaba Dünya!!</h2>
+        <p>Bu bir paragraf.</p>
+        <p>Bu paragraflar CSS ile biçimlendirilmiştir.</p>
+        <hr>
+        <p id="para1">Her paragraf stilden etkilenecektir.</p>
+        <p id="para1">Ben de!</p>
+        <p id="para1">Ve ben!</p>
+        <hr>
+        <h1 class="center">Kırmızı ve ortaya hizalanmış başlık</h1>
+        <p class="center">Kırmızı ve ortaya hizalanmış paragraf.</p>
+        <hr>
+        <h1 class="class">Bu başlık etkilenmeyecek</h1>
+        <p class="class">Bu paragraf pembe olacak ve ortaya hizalanacaktır.</p>
+        <p class="class large">Bu paragraf pembe, ortaya hizalı ve büyük yazı tipi boyutunda olacaktır.</p>
+        <hr>
+        <h3>Hello World!</h3>
+        <h4>Smaller heading!</h4>
+        
+    
+    
+    </body>
+</html>
+
+<!--
+    #id (#firstname) = id="firstname" ile öğeyi seçer
+    .class (.into) = class="intro" ile tüm öğeleri seçer
+     element.class (p.into) = 	Selects only <p> elements with class="intro"
+    *  =   Tüm öğeleri seçer
+    element (p) = Tüm <p> öğelerini seçer
+    element,element,.. (div,p,h1,..) =  üm <div> öğelerini ve tüm <p> öğelerini seçer  
+    /* */ = Css de yorum satırı kullanılır.
+    -->

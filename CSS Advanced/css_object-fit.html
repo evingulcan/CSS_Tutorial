@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.img {
+  width:200px;
+  height:300px;
+}
+.cover {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.contain {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+.fill {
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+}
+.none {
+    width: 200px;
+    height: 300px;
+    object-fit: none;
+}
+.scale-down {
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+}
+</style>
+</head>
+<body>
+
+<h2>Image</h2>
+<img class="img" src="images/pineapple.png" alt="Pineapple" width="400" height="300">
+<hr>
+<h2>Using object-fit: cover</h2>
+<img class="cover" src="images/pineapple.png" alt="Pineapple" width="400" height="300">
+<hr>
+<h2>Using object-fit: contain</h2>
+<img class="contain" src="images/pineapple.png" alt="Pineapple" width="400" height="300">
+<hr>
+<h2>Using object-fit: fill</h2>
+<img class="fill" src="images/pineapple.png" alt="Pineapple" width="400" height="300">
+<hr>
+<h2>Using object-fit: none</h2>
+<img class="none" src="images/pineapple.png" alt="Pineapple" width="400" height="300">
+<hr>
+<h2>Using object-fit: scale-down</h2>
+<img class="scale-down" src="images/pineapple.png" alt="Pineapple" width="400" height="300">
+
+
+
+</body>
+</html>
+<!--
+    object-fit = Bir <img> veya <video> öğesinin kapsayıcısına sığacak şekilde nasıl yeniden boyutlandırılması gerektiğini belirtir
+   
+-->

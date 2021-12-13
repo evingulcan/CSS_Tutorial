@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p.two::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+p.intro::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+}
+p.threen::first-letter {
+    color: blueviolet;
+    font-size: xx-large;
+}
+p.threen::first-line {
+    color: rgb(42, 165, 52);
+    font-variant: small-caps;
+}
+h1::before {
+    content: url(img/smiley.gif);
+    height: 60px;
+    width: 60px;
+}
+h2::after {
+    content: url(img/smiley.gif);
+}
+::marker {
+    color: red;
+    font-size: 23px;
+}
+::selection {
+    color: red;
+    background: yellow;
+}
+</style>
+</head>
+<body>
+
+   <p class="one">Metnin ilk satırına özel bir efekt 
+    eklemek için ::first-line sözde 
+    öğesini kullanabilirsiniz. Biraz 
+    daha metin. Ve daha da fazlası, ve 
+    daha fazlası ve daha fazlası ve daha 
+    fazlası ve daha fazlası ve daha fazlası 
+    ve daha fazlası ve daha fazlası ve daha 
+    fazlası ve daha fazlası ve daha fazlası ve 
+    daha fazlası.</p>
+      <hr>
+      <p class="two">Bir metnin ilk karakterine özel bir efekt
+      eklemek için ::first-letter sözde öğesini
+      kullanabilirsiniz!</p>
+      <hr>
+      <p class="intro">This is an introduction.</p>
+      <p>This is a paragraph with some text. A bit more text even.</p>
+      <hr>
+      <p class="threen">Metnin ilk harfine ve ilk satırına özel bir efekt eklemek için ::first-letter ve ::first-line sözde öğelerini birleştirebilirsiniz!</p>
+       <hr>
+       <h1>Bu bir başlık</h1>
+       <p>::before sözde öğesi, içeriği bir öğenin içeriğinden önce ekler.</p>
+       <hr>
+       <h2>Bu ikinci başlık</h2>
+       <p>::after sözde öğesi, içeriği bir öğenin içeriğinden sonra ekler.</p>
+       <hr>
+       <ul>
+           <li>Kahve</li>
+           <li>Çay</li>
+           <li>Süt</li>
+       </ul>
+       <ol>
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Süt</li>
+    </ol>
+    <hr>
+    <h3>Bu sayfada bir metin seçin:</h3>
+    <p>Bu bir paragraf.</p>
+    <div>
+        Bu, bir div öğesindeki bir metindir.
+    </div>
+    </body>
+</html>
+<!--
+    ::after -- 	p::after = Her <p> öğesinden sonra içerik ekle
+    ::before -- p::before = Her <p> öğesinden önce içerik ekleyin
+    ::first-letter -- p::first-letter = Her <p> öğesinin ilk harfini seçer
+    ::first-line -- p::first-line = Her <p> öğesinin ilk satırını seçer
+    ::selection -- p::selection =  Kullanıcı tarafından seçilen bir öğenin bölümünü seçer
+    ::marker -- ::marker = Liste öğelerinin işaretçilerini seçer
+
+-->

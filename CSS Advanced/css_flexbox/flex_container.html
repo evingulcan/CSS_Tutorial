@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-direction Property</h1>
+<p>"esnek yön: sütun;" esnek öğeleri dikey olarak istifler (yukarıdan aşağıya):</p>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+</body>
+</html>
+<!--
+  align-content = Esnek sarma özelliğinin davranışını değiştirir. Hizalama öğelerine benzer, ancak esnek öğeleri hizalamak yerine esnek çizgileri hizalar
+  align-items = Öğeler çapraz eksendeki tüm kullanılabilir alanı kullanmadığında esnek öğeleri dikey olarak hizalar
+  display = Bir HTML öğesi için kullanılan kutunun türünü belirtir
+  flex-direction = Bir esnek kap içindeki esnek öğelerin yönünü belirtir
+  flex-flow = Esnek yön ve esnek sarma için bir stenografi özelliği
+  flex-wrap = Bir esnek satırda onlar için yeterli yer yoksa, esnek öğelerin sarılıp sarılmayacağını belirtir
+  justify-content = Öğeler ana eksendeki tüm kullanılabilir alanı kullanmadığında esnek öğeleri yatay olarak hizalar
+-->

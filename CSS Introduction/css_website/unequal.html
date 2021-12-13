@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>CSS Website Layout</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <style>
+           * {
+               box-sizing: border-box;
+           }
+           body {
+               margin: 0;
+           }
+           /* Başlığa stil ver */
+           .header {
+               background-color: #f1f1f1;
+               padding: 20px;
+               text-align: center;
+           }
+           /* Üst gezinme çubuğunun stilini belirleyin */
+           .topnav {
+               overflow: hidden;
+               background-color: #333;
+           }
+
+            /* Topnav bağlantılarına stil ver */
+           .topnav a {
+               float: left;
+               display: block;
+               color: #f2f2f2;
+               text-align: center;
+               padding: 14px 16px;
+               text-decoration: none;
+           }
+           /* Üzerine gelindiğinde rengi değiştir */
+           .topnav a:hover {
+               background-color: #ddd;
+               color: black;
+           }
+
+           /* Yan yana kayan üç eşit sütun oluşturun */
+           .column {
+               float: left;
+               width: 33.33%;
+               padding: 15px;
+           }
+           /* Sol ve sağ sütun */
+           .column.side {
+               width: 25%;
+           }
+           /* Orta sütun */
+           .column.middle {
+               width: 50%;
+           }
+            /* Sütunlardan sonraki kayan noktaları temizle */
+           .row:after {
+               content: "";
+               display: table;
+               clear: both;
+           }
+          /* Duyarlı düzen - üç sütunu yan yana değil üst üste yığar */
+           @media screen and (max-width:600px) {
+               .column.side, .column.middle {
+                   width: 100%;
+               }
+           }
+
+           /* Altbilgiyi biçimlendir */
+           .footer {
+               background-color: #f1f1f1;
+               padding: 10px;
+               text-align: center;
+           }
+       </style>
+    </head>
+    <body>
+       <div class="header">
+       <h1>başlık</h1>
+       <p>Duyarlı efekti görmek için tarayıcı penceresini yeniden boyutlandırın.</p>
+       </div>
+
+       <div class="topnav">
+           <a href="#">Bağlantı</a>
+           <a href="#">Bağlantı</a>
+           <a href="#">Bağlantı</a>
+       </div>
+
+       <div class="row">
+      <div class="column side">
+     <h2>Yan</h2>
+     <p>Lorem ipsum dolor sit amet, conectetur adipiscing elit. Maecenas, amet pretium urna'ya oturur. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque araç, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Acil durum işkencesi sed accumsan convallis.</p>
+      </div>
+    
+
+       <div class="column middle">
+        <h2>Ana içerik</h2>
+        <p>Lorem ipsum dolor sit amet, conectetur adipiscing elit. Maecenas, amet pretium urna'ya oturur. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque araç, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Acil durum işkencesi sed accumsan convallis.</p>
+         </div>
+       
+          <div class="column side">
+            <h2>Yan</h2>
+            <p>Lorem ipsum dolor sit amet, conectetur adipiscing elit. Maecenas, amet pretium urna'ya oturur. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque araç, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Acil durum işkencesi sed accumsan convallis.</p>
+             </div>
+            </div>
+            
+              <div class="footer">
+                <p>Footer</p>
+              </div>
+
+    </body>
+</html>

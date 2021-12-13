@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1px solid #555;
+                outline: none;
+            }
+           input[type=text]:focus {
+                background-color: lightpink;
+            }
+
+            input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1px solid #555;
+                outline: none;
+            }
+            input[type=password]:focus {
+                background-color: lime;
+    
+            }
+
+            input[type=number] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 3px solid #ccc;
+                transition: 0.5;
+                -webkit-transition: 0.5;
+                outline: none;
+            }
+            input[type=number]:focus {
+              border: 3px solid lightcoral;
+    
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Renk açık olan giriş alanları :focus</h2>
+        <p>Burada, giriş alanı odaklandığında (tıklandığında) bir renk alır:</p>
+        <form>
+        <label for="fname">Adınız</label>
+        <input type="text" id="fname" name="fname" value="Evin">
+        <label for="lname">Soyadınız</label>
+        <input type="text" id="lname" name="lanem" value="Gülcan">
+        <label for="kname">Şifreniz</label>
+        <input type="password" id="kname" name="kname" value="123456">
+       
+        <p>Burada giriş alanı, odaklandığında (tıklandığında) siyah bir kenarlık rengi alır. Kenarlık rengini canlandırmak için CSS geçiş özelliğini de ekledik (odaktaki rengi değiştirmek 0,5 saniye sürer):</p>
+        <label for="dname">Numaranız</label>
+        <input type="number" id="dname" name="dname" value="0553772637" >
+    </form>
+
+    
+    </body>
+</html>

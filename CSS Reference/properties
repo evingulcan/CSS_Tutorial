@@ -1,0 +1,262 @@
+align-content = Öğeler tüm kullanılabilir alanı kullanmadığında esnek bir kap içindeki satırlar arasındaki hizalamayı belirtir
+align-items = Esnek bir kap içindeki öğeler için hizalamayı belirtir
+align-self =  Esnek bir kap içinde seçili öğeler için hizalamayı belirtir
+all = Tüm özellikleri sıfırlar (unicode-bidi ve yön hariç)
+animation = Tüm animasyon-* özellikleri için bir stenografi özelliği
+animation-delay = Bir animasyonun başlaması için bir gecikme belirtir
+animation-direction = Bir animasyonun ileri mi, geri mi yoksa alternatif döngülerde mi oynatılacağını belirtir.
+animasyon-duration = Bir animasyonun bir döngüyü tamamlamasının ne kadar süreceğini belirtir
+animation-fill-mode = Animasyon oynatılmadığında (başlamadan önce, sona erdikten sonra veya her ikisi) öğe için bir stil belirtir
+animation-iteration-count = Bir animasyonun kaç kez oynatılması gerektiğini belirtir
+animation-name = @keyframes animasyonu için bir ad belirtir
+animation-play-state = Animasyonun çalışıp çalışmadığını veya duraklatıldığını belirtir
+animation-timing-function = Bir animasyonun hız eğrisini belirtir
+
+
+backface-visibility = Bir elemanın arka yüzünün kullanıcıya bakarken görünüp görünmeyeceğini tanımlar.
+background = Tüm arka plan-* özellikleri için bir stenografi özelliği
+background-attachment = Arka plan görüntüsünün sayfanın geri kalanıyla birlikte kaydırılıp kaydırılmayacağını veya sabitlenip görüntülenmeyeceğini ayarlar
+background-blend-mode = Her bir arka plan katmanının (renk/görüntü) karıştırma modunu belirtir
+background-clip = Arka planın (renk veya görüntü) bir öğe içinde ne kadar uzanması gerektiğini tanımlar
+background-color = Bir öğenin arka plan rengini belirtir
+background-image = Bir öğe için bir veya daha fazla arka plan görüntüsü belirtir
+background-origin = Bir arka plan görüntüsünün başlangıç ​​konumunu belirtir
+background-position = Arka plan görüntüsünün konumunu belirtir
+background-repeat = Bir arka plan görüntüsünün tekrarlanıp tekrarlanmayacağını ayarlar
+background-size = Arka plan görüntülerinin boyutunu belirtir
+border = Border-width, border-style ve border-color için bir kestirme özellik
+border-bottom = border-bottom-width, border-bottom-style ve border-bottom-color için bir kestirme özellik
+border-bottom-color = Alt sınırın rengini ayarlar
+border-bottom-left-radius = Sol alt köşenin kenarlığının yarıçapını tanımlar
+border-bottom-right-radius = Sağ alt köşenin kenarlığının yarıçapını tanımlar
+border-bottom-style = Alt sınırın stilini ayarlar
+border-bottom-width = Alt sınırın genişliğini ayarlar
+border-collapse = Tablo sınırlarının tek bir sınıra mı daraltılacağını veya ayrılacağını ayarlar
+border-color = Dört kenarlığın rengini ayarlar
+border-image = Tüm border-image-* özellikleri için bir kestirme özellik
+border-image-outset = Kenarlık görüntü alanının sınır kutusunun ötesine ne kadar uzanacağını belirtir
+border-image-repeat = Kenarlık görüntüsünün tekrarlanması, yuvarlanması veya uzatılması gerektiğini belirtir.
+border-image-slice = Kenarlık görüntüsünün nasıl dilimleneceğini belirtir
+border-image-source = Kenarlık olarak kullanılacak görüntünün yolunu belirtir
+border-image-width = Kenarlık görüntüsünün genişliğini belirtir
+border-left = Tüm border-left-* özellikleri için bir stenografi özelliği
+border-left-color = Sol sınırın rengini ayarlar
+border-left-style = Sol sınırın stilini ayarlar
+border-left-width = Sol sınırın genişliğini ayarlar
+border-radius = Dört border-*-radius özelliği için bir kestirme özellik
+border-right = Tüm border-right-* özellikleri için bir stenografi özelliği
+border-right-color = Sağ kenarlığın rengini ayarlar
+border-right-style = Sağ sınırın stilini ayarlar
+border-right-width = Sağ sınırın genişliğini ayarlar
+border-spacing = Bitişik hücrelerin sınırları arasındaki mesafeyi ayarlar
+border-style = Dört sınırın stilini ayarlar
+border-top = border-top-width, border-top-style ve border-top-color için bir kestirme özellik
+border-top-color = Üst sınırın rengini ayarlar
+border-top-sol-radius = Sol üst köşenin kenarlığının yarıçapını tanımlar
+border-top-right-radius = Sağ üst köşenin kenarlığının yarıçapını tanımlar
+border-top-style = Üst sınırın stilini ayarlar
+border-top-width = Üst sınırın genişliğini ayarlar
+border-width = Dört sınırın genişliğini ayarlar
+bottom = Öğelerin konumunu, ana öğesinin altından ayarlar
+box-decoration-break =Sayfa sonunda veya satır içi öğeler için satır sonunda bir öğenin arka planının ve kenarlığının davranışını ayarlar.
+box-shadow = Bir öğeye bir veya daha fazla gölge ekler
+box-sizing = Bir öğenin genişliğinin ve yüksekliğinin nasıl hesaplandığını tanımlar: dolgu ve kenarlıklar içermeli mi yoksa içermemeli mi?
+break-after = Belirtilen öğeden sonra bir sayfa, sütun veya bölge sonu oluşup oluşmayacağını belirtir.
+break-before = Belirtilen öğeden önce bir sayfa, sütun veya bölge sonunun oluşup oluşmayacağını belirtir.
+Break-inside = Belirtilen öğenin içinde bir sayfa, sütun veya bölge sonunun oluşup oluşmayacağını belirtir
+
+
+caption-side = Bir tablo başlığının yerleşimini belirtir
+caret-color = Girdilerde, metin alanlarında veya düzenlenebilir herhangi bir öğede imlecin (şapka) rengini belirtir
+@charset = Stil sayfasında kullanılan karakter kodlamasını belirtir
+clear = Bir kayan öğenin yanındaki öğeyle ne olması gerektiğini belirtir
+clip = Kesinlikle konumlandırılmış bir öğeyi klipsler
+color = Metnin rengini ayarlar
+column-count = Bir öğenin bölünmesi gereken sütun sayısını belirtir
+column-fill = Sütunların nasıl doldurulacağını, dengeli veya değil
+column-gap = Sütunlar arasındaki boşluğu belirtir
+column-rule = Tüm column-rule-* özellikleri için bir kestirme özellik
+column-rule-color = Sütunlar arasındaki kuralın rengini belirtir
+column-rule-style = Sütunlar arasındaki kuralın stilini belirtir
+column-rule-width = Sütunlar arasındaki kuralın genişliğini belirtir
+column-span = Bir öğenin kaç sütuna yayılması gerektiğini belirtir
+column-width = Sütun genişliğini belirtir
+columns = Sütun genişliği ve sütun sayısı için bir kestirme özellik
+content= Oluşturulan içeriği eklemek için :before ve :after sözde öğeleriyle birlikte kullanılır
+counter-increment = Bir veya daha fazla CSS sayacının değerini artırır veya azaltır
+counter-reset = Bir veya daha fazla CSS sayacı oluşturur veya sıfırlar
+cursor = Bir öğenin üzerine gelindiğinde görüntülenecek fare imlecini belirtir
+
+
+direction = Metin yönünü/yazma yönünü belirtir
+display = Belirli bir HTML öğesinin nasıl görüntüleneceğini belirtir
+
+empty-cells = Bir tablodaki boş hücrelerde kenarlıkların ve arka planın görüntülenip görüntülenmeyeceğini belirtir
+
+filtre = Öğe görüntülenmeden önce bir öğe üzerindeki efektleri (ör. bulanıklık veya renk kayması) tanımlar.
+flex = flex-brow, flex-shrink ve flex-temel özellikleri için bir stenografi özelliği
+flex-basis = Esnek bir öğenin başlangıç ​​uzunluğunu belirtir
+flex-direction = Esnek öğelerin yönünü belirtir
+flex-flow = Esnek yön ve esnek sarma özellikleri için bir kestirme özellik
+flex-grow = Öğenin geri kalanına göre ne kadar büyüyeceğini belirtir
+flex-shrink = Öğenin diğerlerine göre nasıl küçüleceğini belirtir
+flex-wrap = Esnek öğelerin sarılıp sarılmayacağını belirtir
+float = Bir öğenin sola mı, sağa mı yoksa hiç yüzmemesi mi gerektiğini belirtir.
+font = tipi yazı tipi stili, yazı tipi değişkeni, yazı tipi ağırlığı, yazı tipi boyutu/satır yüksekliği ve yazı tipi ailesi özellikleri için bir kısayol özelliği
+@font-face = Web sitelerinin "web için güvenli" yazı tipleri dışındaki yazı tiplerini indirmesine ve kullanmasına izin veren bir kural
+font-family = Metin için font ailesini belirtir
+font-feature-settings = OpenType fontlarda gelişmiş tipografik özellikler üzerinde kontrole izin verir
+@font-feature-values = ​​OpenType'ta farklı şekilde etkinleştirilen özellik için yazarların font-variant-alternate'de ortak bir ad kullanmasına izin verir
+font-kerning = Karakter aralığı bilgisinin kullanımını kontrol eder (harflerin nasıl aralıklı olduğunu)
+font-language-override = Bir yazı tipinde dile özgü gliflerin kullanımını kontrol eder
+font-size = boyutu Metnin yazı tipi boyutunu belirtir
+font-size-adjust = Font geri dönüşü gerçekleştiğinde metnin okunabilirliğini korur
+font-stretch = Bir font ailesinden normal, yoğun veya genişletilmiş bir yüz seçer
+font-style = Metin için font stilini belirtir
+font-sentezi = Eksik yazı tiplerinin (kalın veya italik) tarayıcı tarafından sentezlenebileceği kontrolleri
+font-variant = Bir metnin küçük harfli bir fontta görüntülenip görüntülenmeyeceğini belirtir
+font-variant-alternates = @font-feature-values ​​içinde tanımlanan alternatif adlarla ilişkili alternatif gliflerin kullanımını kontrol eder
+font-variant-caps =  Büyük harfler için alternatif gliflerin kullanımını kontrol eder
+font-variant-east-asian = Doğu Asya komut dosyaları için alternatif gliflerin kullanımını kontrol eder (ör. Japonca ve Çince)
+font-variant-ligatures = Uygulandığı öğelerin metin içeriğinde hangi bitişik harflerin ve bağlamsal formların kullanıldığını kontrol eder.
+font-variant-numeric = Sayılar, kesirler ve sıralı işaretçiler için alternatif gliflerin kullanımını kontrol eder
+font-variant-position = Yazı tipinin taban çizgisine göre üst simge veya alt simge olarak konumlandırılan daha küçük boyutlu alternatif gliflerin kullanımını kontrol eder
+font-weight = Bir fontun ağırlığını belirtir
+
+
+gap = Satır aralığı ve sütun aralığı özellikleri için bir kestirme özellik
+grid = Izgara şablonu satırları, ızgara şablonu sütunları, ızgara şablonu alanları, ızgara otomatik satırları, ızgara otomatik sütunları ve ızgara otomatik akış özellikleri için bir kısayol özelliği
+grid-area = Izgara öğesi için bir ad belirtir veya bu özellik, grid-row-start, grid-column-start, grid-row-end ve grid-column-end özellikleri için bir kestirme özelliktir.
+grid-auto-columns = Varsayılan bir sütun boyutunu belirtir
+grid-auto-flow = Otomatik olarak yerleştirilen öğelerin ızgaraya nasıl ekleneceğini belirtir
+grid-auto-rows = Varsayılan bir satır boyutunu belirtir
+grid-column = Grid-column-start ve grid-column-end özellikleri için bir kestirme özellik
+grid-column-end = Izgara öğesinin nerede biteceğini belirtir
+grid-column-gap = Sütunlar arasındaki boşluğun boyutunu belirtir
+grid-column-start = Izgara öğesinin nereden başlatılacağını belirtir
+grid-gap = Grid-row-gap ve grid-column-gap özellikleri için bir kestirme özellik
+grid-row = Grid-row-start ve grid-row-end özellikleri için bir kestirme özellik
+grid-row-end = Izgara öğesinin nerede biteceğini belirtir
+grid-row-gap = Satırlar arasındaki boşluğun boyutunu belirtir
+grid-row-start = Izgara öğesinin nereden başlatılacağını belirtir
+grid-template = Izgara şablonu satırları, ızgara şablonu sütunları ve ızgara alanları özellikleri için bir kestirme özellik
+grid-template-areas = Adlandırılmış ızgara öğelerini kullanarak sütunların ve satırların nasıl görüntüleneceğini belirtir
+grid-template-columns = Sütunların boyutunu ve bir ızgara düzeninde kaç sütun olduğunu belirtir
+grid-template-rows = Bir ızgara düzenindeki satırların boyutunu belirtir
+
+hanging-punctuation = Bir noktalama işaretinin satır çerçevesinin dışına yerleştirilip yerleştirilemeyeceğini belirtir
+height = Bir elemanın yüksekliğini ayarlar
+hyphens = Paragrafların düzenini iyileştirmek için sözcüklerin nasıl bölüneceğini ayarlar
+
+
+image-rendering = Görüntü ölçekleme için kullanılacak algoritma türünü belirtir
+@import = Bir stil sayfasını başka bir stil sayfasına aktarmanıza olanak tanır
+isolation =Bir öğenin yeni bir yığın içeriği oluşturması gerekip gerekmediğini tanımlar
+
+justify-content = Öğeler tüm kullanılabilir alanı kullanmadığında esnek bir kap içindeki öğeler arasındaki hizalamayı belirtir
+
+@keyframes = Animasyon kodunu belirtir
+
+left = Konumlandırılmış bir elemanın sol konumunu belirtir
+letter-spacing = Bir metindeki karakterler arasındaki boşluğu artırır veya azaltır
+line-break = Satırların nasıl / kesileceğini belirtir
+line-height = Satır yüksekliğini ayarlar
+list-style = Bir listenin tüm özelliklerini tek bir bildirimde ayarlar
+list-style-image = Liste öğesi işaretçisi olarak bir resim belirtir
+list-style-position = Liste öğesi işaretlerinin (madde işaretleri) konumunu belirtir
+list-style-type = Liste öğesi işaretçisinin türünü belirtir
+
+margin = Tüm marj özelliklerini tek bir bildirimde ayarlar
+margin-bottom = Bir öğenin alt kenar boşluğunu ayarlar
+margin-left = Bir öğenin sol kenar boşluğunu ayarlar
+margin-right = Bir öğenin sağ kenar boşluğunu ayarlar
+margin-top = Bir elemanın üst kenar boşluğunu ayarlar
+mask = Resmi belirli yerlerde maskeleyerek veya kırparak bir öğeyi gizler
+mask-type = Bir SVG <mask> öğesinin parlaklık mı yoksa alfa maskesi olarak mı kullanıldığını belirtir
+max-height = Bir elemanın maksimum yüksekliğini ayarlar
+max-width = Bir elemanın maksimum genişliğini ayarlar
+@media = Farklı ortam türleri/aygıtları/boyutları için stil kurallarını belirler
+min-height = Bir elemanın minimum yüksekliğini ayarlar
+min-width = Bir elemanın minimum genişliğini ayarlar
+mix-blend-mode = Bir öğenin içeriğinin doğrudan üst arka planıyla nasıl harmanlanması gerektiğini belirtir
+
+
+object-fit = Değiştirilen öğenin içeriğinin, kullanılan yükseklik ve genişlik tarafından oluşturulan kutuya nasıl sığdırılacağını belirtir.
+object-position = Değiştirilen öğenin kutusunun içindeki hizalamasını belirtir
+opacity = Bir öğenin opaklık seviyesini ayarlar
+order = Esnek öğenin sırasını geri kalanına göre ayarlar
+orphans = Bir sayfanın veya sütunun en altında bırakılması gereken minimum satır sayısını ayarlar
+outline = Anahat genişliği, anahat stili ve anahat rengi özellikleri için bir stenografi özelliği
+outline-color = Bir anahattın rengini ayarlar
+outline-offset = Bir anahattı öteler ve onu sınır kenarının ötesine çizer
+outline-style = Anahat stilini ayarlar
+outline-width = Bir anahattın genişliğini ayarlar
+overflow = İçerik bir öğenin kutusundan taşarsa ne olacağını belirtir
+overflow-wrap = Tarayıcının, kapsayıcıyı taşması durumunda uzun kelimeler içeren satırları kesip kesemeyeceğini belirtir.
+overflow-x = Öğenin içerik alanından taşarsa, içeriğin sol/sağ kenarlarının kırpılıp kırpılmayacağını belirtir
+overflow-y = Öğenin içerik alanından taşarsa, içeriğin üst/alt kenarlarının kırpılıp kırpılmayacağını belirtir
+
+
+padding = Tüm padding-* özellikleri için bir stenografi özelliği
+padding-bottom = Bir elemanın alt dolgusunu ayarlar
+padding-left = Bir öğenin sol dolgusunu ayarlar
+padding-right = Bir öğenin sağ dolgusunu ayarlar
+padding-top = Bir elemanın üst dolgusunu ayarlar
+page-break-after = Bir öğeden sonra sayfa sonu davranışını ayarlar
+page-break-before = Bir öğeden önceki sayfa sonu davranışını ayarlar
+page-break-inside = Bir öğenin içindeki sayfa sonu davranışını ayarlar
+perspektif = 3B konumlu bir öğeye biraz perspektif verir
+perspektif-orijin = Kullanıcının 3B konumlu öğeye hangi konumda baktığını tanımlar
+pointer-events = Bir öğenin işaretçi olaylarına tepki verip vermediğini tanımlar
+position = Bir öğe için kullanılan konumlandırma yönteminin türünü belirtir (statik, göreli, mutlak veya sabit)
+
+quotes = Gömülü alıntılar için tırnak işareti türünü ayarlar
+
+resize = Bir öğenin kullanıcı tarafından yeniden boyutlandırılıp boyutlandırılamayacağını (ve nasıl) tanımlar
+right = Konumlandırılmış bir öğenin doğru konumunu belirtir
+row-gap = Izgara satırları arasındaki boşluğu belirtir
+
+scroll-behavior = Düz ​​bir atlama yerine kaydırılabilir bir kutuda kaydırma konumunun yumuşak bir şekilde canlandırılıp canlandırılmayacağını belirtir
+
+tab-size = Bir sekme karakterinin genişliğini belirtir
+table-layout = Tablo hücrelerini, satırları ve sütunları düzenlemek için kullanılan algoritmayı tanımlar.
+text-align = Metnin yatay hizalamasını belirtir
+text-align-last = Metin hizalama "yasla" olduğunda, bir satırın veya satırın zorunlu satır sonundan hemen önceki son satırının nasıl hizalandığını açıklar
+text-combine-upright = Tek bir karakter boşluğunda birden çok karakterin birleşimini belirtir
+text-decoration = Metne eklenen dekorasyonu belirtir
+text-decoration-color = Metin-dekorasyonun rengini belirtir
+text-decoration-line = Bir metin-dekorasyonundaki satırın türünü belirtir
+text-decoration-style = Bir metin dekorasyonunda çizginin stilini belirtir
+text-indent = Bir metin bloğundaki ilk satırın girintisini belirtir
+text-justify = Metin hizalama "yasla" olduğunda kullanılan doğrulama yöntemini belirtir
+text-orientation = Bir satırdaki metnin yönünü tanımlar
+text-overflow = Metin içeren öğeyi aştığında ne olacağını belirtir
+text-shadow = Metne gölge ekler
+text-transform = Metnin büyük harf kullanımını kontrol eder
+text-underline-position = text-decoration özelliği kullanılarak ayarlanan alt çizginin konumunu belirtir
+top = Konumlandırılmış bir elemanın en üst konumunu belirtir
+transform = Bir öğeye 2B veya 3B dönüştürme uygular
+transform-origin = Dönüştürülen öğeler üzerindeki konumu değiştirmenizi sağlar
+transform-style = İç içe öğelerin 3B alanda nasıl oluşturulacağını belirtir
+transition = Tüm geçiş-* özellikleri için bir stenografi özelliği
+transition-delay = Geçiş etkisinin ne zaman başlayacağını belirtir
+transition-duration = Bir geçiş efektinin tamamlanmasının kaç saniye veya milisaniye süreceğini belirtir
+transition-property = Geçiş efektinin olduğu CSS özelliğinin adını belirtir
+transition-timing-function = Geçiş efektinin hız eğrisini belirtir
+
+unicode-bidi = Aynı belgede birden çok dili desteklemek için metnin geçersiz kılınıp kılınmayacağını ayarlamak veya döndürmek için yön özelliğiyle birlikte kullanılır
+user-select = Bir öğenin metninin seçilip seçilemeyeceğini belirtir
+
+
+vertical-align = Bir öğenin dikey hizalamasını ayarlar
+visibility = Bir öğenin görünür olup olmadığını belirtir
+
+white-space = Bir öğenin içindeki boşlukların nasıl işlendiğini belirtir
+widows = Bir sayfanın veya sütunun en üstünde bırakılması gereken minimum satır sayısını ayarlar
+width = Bir elemanın genişliğini ayarlar
+word-break = Bir satırın sonuna ulaşıldığında kelimelerin nasıl kesileceğini belirtir
+word-spacing = Bir metindeki sözcükler arasındaki boşluğu artırır veya azaltır
+word-wrap = Uzun, kırılmaz sözcüklerin kesilmesine ve sonraki satıra kaydırılmasına izin verir
+writing-mode = Metin satırlarının yatay mı yoksa dikey mi yerleştirileceğini belirtir
+
+z-endeksi = Konumlandırılmış bir öğenin yığın sırasını ayarlar

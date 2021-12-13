@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s,height 4s;
+}
+
+div.ex1:hover {
+  width: 300px;
+}
+div.ex2:hover {
+    width: 300px;
+    height: 300px;
+}
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div.ex3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s, transform 2s;
+}
+#div6:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Geçiş Özelliği</h1>
+
+<p>Geçiş efektini görmek için aşağıdaki div öğesinin üzerine gelin:</p>
+<div class="ex1"></div>
+<br>
+
+<p>Geçiş efektini görmek için aşağıdaki div öğesinin üzerine gelin:</p>
+<div class="ex2"></div>
+<hr>
+<h1>geçiş-zamanlama-fonksiyonu Özellik</h1>
+<p>Farklı hız eğrilerini görmek için aşağıdaki div öğelerinin üzerine gelin:</p>
+<div class="ex1" id="div1">linear</div><br>
+<div class="ex1" id="div2">ease</div><br>
+<div class="ex1" id="div3">ease-in</div><br>
+<div class="ex1" id="div4">ease-out</div><br>
+<div class="ex1" id="div5">ease-in-out</div><br>
+
+<hr>
+<h1>Geçiş + Dönüşüm - Transition + Transform </h1>
+<p>Fareyle aşağıdaki div öğesinin üzerine gelin:</p>
+<div class="ex3" id="div6"></div>
+
+</body>
+</html>
+<!--
+transition = Dört geçiş özelliğini tek bir özelliğe ayarlamak için bir kestirme özellik
+transition-delay = Geçiş efekti için bir gecikme (saniye cinsinden) belirtir
+transition-duration = Bir geçiş efektinin tamamlanmasının kaç saniye veya milisaniye süreceğini belirtir
+transition-property = Geçiş efektinin olduğu CSS özelliğinin adını belirtir
+transition-timing-function = Geçiş efektinin hız eğrisini belirtir
+
+-->

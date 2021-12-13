@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .div1 {
+            float: left;
+            padding: 10px;
+            border: 3px solid #dd0cf0;
+        }
+        .div2 {
+            padding: 10px;
+            border: 3px solid red;
+        }
+        .div3 {
+            float: left;
+            padding: 10px;
+            border: 3px solid #dd0cf0;
+        }
+        .div4 {
+            padding: 10px;
+            border: 3px solid red;
+            clear: left;
+        }
+          div {
+              border: 3px solid #dd0cf0;
+              padding: 5px;
+          }
+          .img1 {
+              float: right;
+          }
+          .img2 {
+              float: right;
+          }
+          .clearfix {
+              overflow: auto ;
+          }
+        </style>
+    </head>
+    <body>
+        <h2>Without clear</h2>
+        <div class="div1">div1</div>
+        <div class="div2">div2-HTML kodunda div2'nin div1'den sonra olduğuna dikkat edin. Ancak, div1 sola doğru yüzdüğü için div2'deki metin div1'in etrafında akar.</div>
+        <br><br>
+        <h2>With clear</h2>
+        <div class="div3">div3</div>
+        <div class="div4">div4-Burada, net: sol; div4'ü kayan div3'ün altına taşır. "Sol" değeri, sola kayan öğeleri temizler. Ayrıca "sağ" ve "her ikisini" de temizleyebilirsiniz.</div>
+ 
+        <hr>
+
+        <h2>Without Clearfix</h2>
+        <p>Bu görüntü sağa kayar. Ayrıca, onu içeren elementten daha uzundur, bu nedenle kabının dışına taşar:</p>
+        <div>
+            <img class="img1" src="img/pineapple.jpg" alt="Pineapple" width="170" height="170">
+            Lorem ipsum dolor sit amet, conectetur adipiscing elit. Phasellus imperdiet..
+        </div>
+
+        <h2 style="clear: right;">With Clearfix</h2>
+        <p>Bunu, overflow: auto; ile bir clearfix sınıfı ekleyerek düzeltebiliriz. içeren öğeye:</p>
+        <div class="clearfix">
+            <img class="img2" src="img/pineapple.jpg" alt="Pineapple" width="170" height="170">
+            Lorem ipsum dolor sit amet, conectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+    </body>
+</html>

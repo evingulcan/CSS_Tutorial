@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a[target] {
+                background-color: blueviolet;
+            }
+            a.one[target=_blank] {
+                background-color: yellow;
+            }
+            [title~=flower] {
+                border: 5px solid yellow;
+            }
+            [class|=carp] {
+                background-color: red;
+            }
+            [class^="top"] {
+                background: green;
+            }
+            [class$="test"] {
+                background: hotpink;
+            }
+            [class*="th"] {
+                background: lightseagreen;
+            }
+            input[type=text] {
+                width: 150px;
+                display: block;
+                margin-bottom: 10px;
+                background-color: lightpink; 
+            }
+            input[type=button] {
+                width: 120px;
+                margin-left: 35px;
+                display: block;
+            }
+         </style>
+    </head>
+    <body>
+ <h2>CSS [özellik(attribute)] Seçici</h2>
+ <p>Hedef özniteliği olan bağlantılar sarı bir arka plan alır:</p>
+
+ <a href="https://www.w3schools.com">w3schools.com</a>
+ <a href="http://www.disney.com" target="_blank">disney.com</a>
+ <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+  <hr>
+ <h2>CSS [attribute="value"] Seçici</h2>
+  <p>target="_blank" olan bağlantı sarı bir arka plan alır:</p>
+  <a href="https://www.w3schools.com">w3schools.com</a>
+  <a class="one" href="http://www.disney.com" target="_blank">disney.com</a>
+  <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+  <hr>
+  <h2>CSS [attribute~="değer"] Seçici</h2>
+  <p>"Çiçek" kelimesini içeren başlık özniteliğine sahip tüm resimler sarı bir kenarlık alır.</p>
+  <img src="img/indir.jpg" title="klematis flower" width="150" height="113">
+  <img src="img/pineapple.jpg" title="Pineapple" width="224" height="162">
+  <img src="img/smiley.gif" title="Smiley" width="200" height="358">
+  <img src="img/kozmos.jpg" title="Kozmos flower" width="200" height="358">
+
+   <hr>
+   <h2>CSS [attribute|="value"] Seçici</h2>
+  <h1 class="carp-header">Hoş geldin</h1>
+  <p class="carp-text">Selam Dünya!</p>
+  <p class="carpcontent">CSS öğreniyor musun?</p>
+    
+     <hr>
+     <h2>CSS [attribute^="value"] Seçici</h2>
+     <h1 class="top-header">Hoş geldin</h1>
+     <p class="top-text">Selam Dünya!</p>
+     <p class="topcontent">CSS öğreniyor musun?</p>
+     
+     <hr>
+     <h2>CSS [attribute$="value"] Seçici</h2>
+     <div class="first_test">İlk div öğesi.</div>
+     <div class="second">İkinci div öğesi.</div>
+     <div class="my-test">Üçüncü div öğesi.</div>
+     <p class="mytest">Bu, bir paragraftaki bazı metinlerdir.</p>
+     
+     <hr>
+     <h2>CSS [attribute*="value"] Seçici</h2>
+     <div class="first">İlk div öğesi.</div>
+     <div class="second">İkinci div öğesi.</div>
+     <div class="third">Üçüncü div öğesi.</div>
+     <p class="mytext">Bu, bir paragraftaki bazı metinlerdir.</p>
+
+
+    <hr>
+    <h2>Styling Forms</h2>
+    <form name="input" action="" method="get">
+      Adınız:<input type="text" name="Name" value="Evin">
+      Soyadınız:<input type="text" name="Name" value="Gülcan">
+      <input type="button" value="Gönder">
+    </form>
+    </body>
+</html>
+<!--
+    [attribute] - [target] = Bir hedef özniteliği olan tüm öğeleri seçer
+    [attribute=value] - [target=_blank] = target="_blank" olan tüm öğeleri seçer
+    [attribute~=value] - [title~=flower] = "Çiçek" kelimesini içeren bir başlık niteliğine sahip tüm öğeleri seçer
+    [attribute|=value] - [lang|=en] = "en" ile başlayan bir lang öznitelik değerine sahip tüm öğeleri seçer
+    [attribute^=value] - a[href^="https"] = Selects every <a> element whose href attribute value begins with "https"
+    [attribute$=value] - a[href$=".pdf"] = href öznitelik değeri ".pdf" ile biten her <a> öğesini seçer
+    [attribute*=value] - a[href*="w3schools"] =	 href öznitelik değeri "w3schools" alt dizesini içeren her <a> öğesini seçer
+
+-->
